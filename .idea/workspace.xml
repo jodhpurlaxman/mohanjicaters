@@ -2,22 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="20b62df9-fe0e-4c47-a6d1-621c7d196168" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/base/card.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/contact/footer.html" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ecommerce/settings.py" afterPath="$PROJECT_DIR$/ecommerce/settings.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/products/templates/products/snippets/card.html" afterPath="$PROJECT_DIR$/products/templates/products/snippets/card.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_my_proj/css/main.css" afterPath="$PROJECT_DIR$/static_my_proj/css/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_my_proj/css/style.default.css" afterPath="$PROJECT_DIR$/static_my_proj/css/style.default.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/base.html" afterPath="$PROJECT_DIR$/templates/base.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/base/about.html" afterPath="$PROJECT_DIR$/templates/base/about.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/base/navbar.html" afterPath="$PROJECT_DIR$/templates/base/navbar.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/base/service.html" afterPath="$PROJECT_DIR$/templates/base/service.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/base/slider.html" afterPath="$PROJECT_DIR$/templates/base/slider.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/contact/view.html" afterPath="$PROJECT_DIR$/templates/contact/view.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/footer.html" afterPath="$PROJECT_DIR$/templates/footer.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/home_page1.html" afterPath="$PROJECT_DIR$/templates/home_page1.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -90,11 +76,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="footer.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="footer.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/footer.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="5" column="49" lean-forward="false" selection-start-line="5" selection-start-column="49" selection-end-line="5" selection-end-column="49" />
+            <state relative-caret-position="414">
+              <caret line="56" column="64" lean-forward="false" selection-start-line="56" selection-start-column="64" selection-end-line="56" selection-end-column="64" />
               <folding />
             </state>
           </provider>
@@ -122,7 +108,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="about.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="about.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/base/about.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="36">
@@ -194,11 +180,11 @@
         <option value="$PROJECT_DIR$/templates/contact/view.html" />
         <option value="$PROJECT_DIR$/templates/home_page1.html" />
         <option value="$PROJECT_DIR$/templates/base/about.html" />
-        <option value="$PROJECT_DIR$/templates/footer.html" />
         <option value="$PROJECT_DIR$/templates/base/slider.html" />
         <option value="$PROJECT_DIR$/templates/base/css.html" />
         <option value="$PROJECT_DIR$/templates/base/navbar.html" />
         <option value="$PROJECT_DIR$/static_my_proj/css/style.default.css" />
+        <option value="$PROJECT_DIR$/templates/footer.html" />
       </list>
     </option>
   </component>
@@ -674,14 +660,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/footer.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="49" lean-forward="false" selection-start-line="5" selection-start-column="49" selection-end-line="5" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/base/slider.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
@@ -728,6 +706,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
           <caret line="2" column="62" lean-forward="false" selection-start-line="2" selection-start-column="62" selection-end-line="2" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/footer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="56" column="64" lean-forward="false" selection-start-line="56" selection-start-column="64" selection-end-line="56" selection-end-column="64" />
           <folding />
         </state>
       </provider>
