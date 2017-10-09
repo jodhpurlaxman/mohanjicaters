@@ -127,9 +127,11 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
-
+BASE_DIR = '/home/mohanjicaters/mohanjicaters/'
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [
-    #os.path.join(BASE_DIR, "static_test", "static"),
-    '/home/mohanjicaters/mohanjicaters/static_test/',
+    os.path.join(BASE_DIR, "static_test", "static"),
+    #'/home/mohanjicaters/mohanjicaters/static_test/',
 ]
+
+
