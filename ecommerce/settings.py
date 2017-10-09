@@ -130,6 +130,6 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, "static_test", "static"),
-    #'/var/www/static/',
+    #os.path.join(BASE_DIR, "static_test", "static"),
+    '/home/mohanjicaters/mohanjicaters/static_test/',
 ]
