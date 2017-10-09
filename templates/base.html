@@ -22,8 +22,26 @@
     <body>
         <div class="page-holder">
             <!-- Navbar -->
-            {% block navbar %}{% endblock %}
-            {% block slider %}{% endblock %}
-            {% block dishes %}{% endblock %}
-            {% block about %}{% endblock %}
-           {% block footer %}{% endblock %}
+            {% block navbar %}
+                {% include 'base/navbar.html' %}
+            {% endblock %}
+
+            {% block slider %}
+                {% include 'base/slider.html' %}
+            {% endblock %}
+
+            {% block dishes %}
+                {% include 'products/list.html' %}
+            {% endblock %}
+
+            {% block service %}
+                {% include 'base/service.html' %}
+            {% endblock %}
+
+            {% block about %}
+                {% include 'base/about.html' %}
+            {% endblock %}
+
+            {% block footer %}
+                {% include 'footer.html' %}
+            {% endblock %}

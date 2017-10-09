@@ -1,0 +1,18 @@
+<section id="offers" class="offers">
+        <div class="container text-center">
+
+            <header>
+                <h2>Special Offers</h2>
+                <h3>Don't miss our offers</h3>
+            </header>
+
+            <div class="row">
+
+
+                {% block content %}
+                    {% for obj in object_list %}
+                        {% include 'products/snippets/card.html' with instance=obj %}
+                    {% endfor %}
+                {% endblock %}
+            </div>
+</section>
