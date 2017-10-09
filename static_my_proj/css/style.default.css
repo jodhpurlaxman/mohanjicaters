@@ -8,13 +8,13 @@ Italiano By BootstrapTemple.com
 =========================================
 ========================================= */
 /* variant 1 - Default */
-@media (min-width: 768px) {
+/*@media (min-width: 768px) {
   .navbar.shrink {
     min-height: 60px;
   }
   .navbar.shrink .navbar-brand {
     height: 60px;
-    /*padding: 18.5px 15px; by lky */
+    *//*padding: 18.5px 15px; by lky *//*
     padding: 18.5px 15px;
   }
   .navbar.shrink .navbar-btn {
@@ -25,10 +25,10 @@ Italiano By BootstrapTemple.com
     float: left;
   }
   .navbar.shrink .navbar-nav > li > a {
-    padding-top: 18.5px;
-    padding-bottom: 18.5px;
+
+    padding-bottom: 50.5px;
   }
-}
+}*/
 /*
 
 =====================
@@ -1528,7 +1528,7 @@ footer .copyrights p a:hover {
 }
 .navbar-brand {
   float: left;
-  padding: 38.5px 15px;
+  padding: 10px 15px 38px 15px;
   font-size: 19px;
   line-height: 23px;
   height: 100px;
@@ -1541,7 +1541,7 @@ footer .copyrights p a:hover {
   .navbar > .container .navbar-brand,
   .navbar > .container-fluid .navbar-brand {
     margin-left: -15px;
-    margin-top: -40px;
+    /*margin-top: -40px;*/
     text-align: center;
   }
 }
@@ -2277,5 +2277,13 @@ a.list-group-item.active > .badge,
 }
 .nav-pills > li > a > .badge {
   margin-left: 3px;
+ }
+
+.productsblock{
+margin-bottom: 40px; !important
 }
+.aboutmohanji{
+background: #f5f5f5;
+}
+
 
