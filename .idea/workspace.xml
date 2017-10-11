@@ -2,8 +2,167 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="20b62df9-fe0e-4c47-a6d1-621c7d196168" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/products/templates/products/productlist.html" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/bootstrap/example.html" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_my_proj/img/AKHORAT-QUBE.jpg" afterPath="$PROJECT_DIR$/static_my_proj/img/AKHORAT-QUBE.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_my_proj/img/AMERICAN-NUTS.jpg" afterPath="$PROJECT_DIR$/static_my_proj/img/AMERICAN-NUTS.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_my_proj/img/ANJIR-BARFI-2.jpg" afterPath="$PROJECT_DIR$/static_my_proj/img/ANJIR-BARFI-2.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_my_proj/img/ANJIR-DRYFRUIT-CAKE.jpg" afterPath="$PROJECT_DIR$/static_my_proj/img/ANJIR-DRYFRUIT-CAKE.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_my_proj/img/ANJIR-DRYFRUIT-KATRI.jpg" afterPath="$PROJECT_DIR$/static_my_proj/img/ANJIR-DRYFRUIT-KATRI.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_my_proj/img/DSC_0003-875x875.jpg" afterPath="$PROJECT_DIR$/static_my_proj/img/DSC_0003-875x875.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_my_proj/img/HF_homepage_image_2017_2560x700_chicken_compressed (1).jpg" afterPath="$PROJECT_DIR$/static_my_proj/img/HF_homepage_image_2017_2560x700_chicken_compressed (1).jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_my_proj/img/HF_homepage_image_2017_2560x700_chicken_compressed.jpg" afterPath="$PROJECT_DIR$/static_my_proj/img/HF_homepage_image_2017_2560x700_chicken_compressed.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_my_proj/img/Lalji-Bikaner-All in One.jpg" afterPath="$PROJECT_DIR$/static_my_proj/img/Lalji-Bikaner-All in One.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_my_proj/img/beach.jpg" afterPath="$PROJECT_DIR$/static_my_proj/img/beach.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_my_proj/img/bg-small.jpg" afterPath="$PROJECT_DIR$/static_my_proj/img/bg-small.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_my_proj/img/bg.jpg" afterPath="$PROJECT_DIR$/static_my_proj/img/bg.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_my_proj/img/bg01-small.jpg" afterPath="$PROJECT_DIR$/static_my_proj/img/bg01-small.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_my_proj/img/bg01.jpg" afterPath="$PROJECT_DIR$/static_my_proj/img/bg01.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_my_proj/img/bg02-small.jpg" afterPath="$PROJECT_DIR$/static_my_proj/img/bg02-small.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_my_proj/img/bg02.jpg" afterPath="$PROJECT_DIR$/static_my_proj/img/bg02.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_my_proj/img/bg03-small.jpg" afterPath="$PROJECT_DIR$/static_my_proj/img/bg03-small.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_my_proj/img/bg03.jpg" afterPath="$PROJECT_DIR$/static_my_proj/img/bg03.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_my_proj/img/bg04-small.jpg" afterPath="$PROJECT_DIR$/static_my_proj/img/bg04-small.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_my_proj/img/bg04.jpg" afterPath="$PROJECT_DIR$/static_my_proj/img/bg04.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_my_proj/img/bg05-small.jpg" afterPath="$PROJECT_DIR$/static_my_proj/img/bg05-small.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_my_proj/img/bg05.jpg" afterPath="$PROJECT_DIR$/static_my_proj/img/bg05.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_my_proj/img/bg06-small.jpg" afterPath="$PROJECT_DIR$/static_my_proj/img/bg06-small.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_my_proj/img/bg06.jpg" afterPath="$PROJECT_DIR$/static_my_proj/img/bg06.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_my_proj/img/bg07-small.jpg" afterPath="$PROJECT_DIR$/static_my_proj/img/bg07-small.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_my_proj/img/bg07.jpg" afterPath="$PROJECT_DIR$/static_my_proj/img/bg07.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_my_proj/img/dish-a.png" afterPath="$PROJECT_DIR$/static_my_proj/img/dish-a.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_my_proj/img/dish-b.png" afterPath="$PROJECT_DIR$/static_my_proj/img/dish-b.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_my_proj/img/dish-c.png" afterPath="$PROJECT_DIR$/static_my_proj/img/dish-c.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_my_proj/img/dish-d.png" afterPath="$PROJECT_DIR$/static_my_proj/img/dish-d.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_my_proj/img/event-bg.jpg" afterPath="$PROJECT_DIR$/static_my_proj/img/event-bg.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_my_proj/img/favicon.ico" afterPath="$PROJECT_DIR$/static_my_proj/img/favicon.ico" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_my_proj/img/hero-bg.jpg" afterPath="$PROJECT_DIR$/static_my_proj/img/hero-bg.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_my_proj/img/hero-bg02.jpg" afterPath="$PROJECT_DIR$/static_my_proj/img/hero-bg02.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_my_proj/img/hero-bg03.jpg" afterPath="$PROJECT_DIR$/static_my_proj/img/hero-bg03.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_my_proj/img/hero-bg04.jpg" afterPath="$PROJECT_DIR$/static_my_proj/img/hero-bg04.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_my_proj/img/logo (another copy).png" afterPath="$PROJECT_DIR$/static_my_proj/img/logo (another copy).png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_my_proj/img/logo (copy).png" afterPath="$PROJECT_DIR$/static_my_proj/img/logo (copy).png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_my_proj/img/logo-footer.png" afterPath="$PROJECT_DIR$/static_my_proj/img/logo-footer.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_my_proj/img/logo.png" afterPath="$PROJECT_DIR$/static_my_proj/img/logo.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_my_proj/img/logo11.png" afterPath="$PROJECT_DIR$/static_my_proj/img/logo11.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_my_proj/img/mathis-category.jpg" afterPath="$PROJECT_DIR$/static_my_proj/img/mathis-category.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_my_proj/img/namkeen_1.jpg" afterPath="$PROJECT_DIR$/static_my_proj/img/namkeen_1.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_my_proj/img/product-one.png" afterPath="$PROJECT_DIR$/static_my_proj/img/product-one.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_my_proj/img/vegetables.png" afterPath="$PROJECT_DIR$/static_my_proj/img/vegetables.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/shopping.iml" afterPath="$PROJECT_DIR$/.idea/shopping.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/accounts/__init__.py" afterPath="$PROJECT_DIR$/accounts/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/accounts/admin.py" afterPath="$PROJECT_DIR$/accounts/admin.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/accounts/apps.py" afterPath="$PROJECT_DIR$/accounts/apps.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/accounts/forms.py" afterPath="$PROJECT_DIR$/accounts/forms.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/accounts/models.py" afterPath="$PROJECT_DIR$/accounts/models.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/accounts/templates/accounts/login.html" afterPath="$PROJECT_DIR$/accounts/templates/accounts/login.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/accounts/templates/accounts/register.html" afterPath="$PROJECT_DIR$/accounts/templates/accounts/register.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/accounts/templates/accounts/snippets/form.html" afterPath="$PROJECT_DIR$/accounts/templates/accounts/snippets/form.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/accounts/tests.py" afterPath="$PROJECT_DIR$/accounts/tests.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/accounts/views.py" afterPath="$PROJECT_DIR$/accounts/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/addresses/__init__.py" afterPath="$PROJECT_DIR$/addresses/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/addresses/admin.py" afterPath="$PROJECT_DIR$/addresses/admin.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/addresses/apps.py" afterPath="$PROJECT_DIR$/addresses/apps.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/addresses/forms.py" afterPath="$PROJECT_DIR$/addresses/forms.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/addresses/models.py" afterPath="$PROJECT_DIR$/addresses/models.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/addresses/templates/addresses/form.html" afterPath="$PROJECT_DIR$/addresses/templates/addresses/form.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/addresses/templates/addresses/prev_addresses.html" afterPath="$PROJECT_DIR$/addresses/templates/addresses/prev_addresses.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/addresses/tests.py" afterPath="$PROJECT_DIR$/addresses/tests.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/addresses/views.py" afterPath="$PROJECT_DIR$/addresses/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/billing/__init__.py" afterPath="$PROJECT_DIR$/billing/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/billing/admin.py" afterPath="$PROJECT_DIR$/billing/admin.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/billing/apps.py" afterPath="$PROJECT_DIR$/billing/apps.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/billing/migrations/0001_initial.py" afterPath="$PROJECT_DIR$/billing/migrations/0001_initial.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/billing/migrations/__init__.py" afterPath="$PROJECT_DIR$/billing/migrations/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/billing/models.py" afterPath="$PROJECT_DIR$/billing/models.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/billing/tests.py" afterPath="$PROJECT_DIR$/billing/tests.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/billing/views.py" afterPath="$PROJECT_DIR$/billing/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/carts/__init__.py" afterPath="$PROJECT_DIR$/carts/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/carts/admin.py" afterPath="$PROJECT_DIR$/carts/admin.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/carts/apps.py" afterPath="$PROJECT_DIR$/carts/apps.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/carts/migrations/0001_initial.py" afterPath="$PROJECT_DIR$/carts/migrations/0001_initial.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/carts/migrations/__init__.py" afterPath="$PROJECT_DIR$/carts/migrations/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/carts/models.py" afterPath="$PROJECT_DIR$/carts/models.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/carts/templates/carts/checkout-done.html" afterPath="$PROJECT_DIR$/carts/templates/carts/checkout-done.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/carts/templates/carts/checkout.html" afterPath="$PROJECT_DIR$/carts/templates/carts/checkout.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/carts/templates/carts/home.html" afterPath="$PROJECT_DIR$/carts/templates/carts/home.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/carts/tests.py" afterPath="$PROJECT_DIR$/carts/tests.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/carts/urls.py" afterPath="$PROJECT_DIR$/carts/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/carts/views.py" afterPath="$PROJECT_DIR$/carts/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ecommerce/__init__.py" afterPath="$PROJECT_DIR$/ecommerce/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ecommerce/forms.py" afterPath="$PROJECT_DIR$/ecommerce/forms.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ecommerce/settings.py" afterPath="$PROJECT_DIR$/ecommerce/settings.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ecommerce/urls.py" afterPath="$PROJECT_DIR$/ecommerce/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ecommerce/utils.py" afterPath="$PROJECT_DIR$/ecommerce/utils.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ecommerce/views.py" afterPath="$PROJECT_DIR$/ecommerce/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ecommerce/wsgi.py" afterPath="$PROJECT_DIR$/ecommerce/wsgi.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/orders/__init__.py" afterPath="$PROJECT_DIR$/orders/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/orders/admin.py" afterPath="$PROJECT_DIR$/orders/admin.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/orders/apps.py" afterPath="$PROJECT_DIR$/orders/apps.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/orders/migrations/0001_initial.py" afterPath="$PROJECT_DIR$/orders/migrations/0001_initial.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/orders/migrations/__init__.py" afterPath="$PROJECT_DIR$/orders/migrations/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/orders/models.py" afterPath="$PROJECT_DIR$/orders/models.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/orders/tests.py" afterPath="$PROJECT_DIR$/orders/tests.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/orders/views.py" afterPath="$PROJECT_DIR$/orders/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/products/__init__.py" afterPath="$PROJECT_DIR$/products/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/products/admin.py" afterPath="$PROJECT_DIR$/products/admin.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/products/apps.py" afterPath="$PROJECT_DIR$/products/apps.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/products/migrations/0001_initial.py" afterPath="$PROJECT_DIR$/products/migrations/0001_initial.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/products/migrations/__init__.py" afterPath="$PROJECT_DIR$/products/migrations/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/products/models.py" afterPath="$PROJECT_DIR$/products/models.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/products/templates/products/detail.html" afterPath="$PROJECT_DIR$/products/templates/products/detail.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/products/templates/products/featured-detail.html" afterPath="$PROJECT_DIR$/products/templates/products/featured-detail.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/products/templates/products/list.html" afterPath="$PROJECT_DIR$/products/templates/products/list.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/products/templates/products/snippets/card.html" afterPath="$PROJECT_DIR$/products/templates/products/snippets/card.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/products/templates/products/snippets/update-cart.html" afterPath="$PROJECT_DIR$/products/templates/products/snippets/update-cart.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/products/tests.py" afterPath="$PROJECT_DIR$/products/tests.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/products/understanding_crud.md" afterPath="$PROJECT_DIR$/products/understanding_crud.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/products/urls.py" afterPath="$PROJECT_DIR$/products/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/products/views.py" afterPath="$PROJECT_DIR$/products/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/requirements.txt" afterPath="$PROJECT_DIR$/requirements.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/search/__init__.py" afterPath="$PROJECT_DIR$/search/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/search/admin.py" afterPath="$PROJECT_DIR$/search/admin.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/search/apps.py" afterPath="$PROJECT_DIR$/search/apps.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/search/migrations/__init__.py" afterPath="$PROJECT_DIR$/search/migrations/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/search/models.py" afterPath="$PROJECT_DIR$/search/models.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/search/templates/search/snippets/search-form.html" afterPath="$PROJECT_DIR$/search/templates/search/snippets/search-form.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/search/templates/search/view.html" afterPath="$PROJECT_DIR$/search/templates/search/view.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/search/tests.py" afterPath="$PROJECT_DIR$/search/tests.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/search/urls.py" afterPath="$PROJECT_DIR$/search/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/search/views.py" afterPath="$PROJECT_DIR$/search/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_my_proj/img/angle-down.svg" afterPath="$PROJECT_DIR$/static_my_proj/img/angle-down.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_my_proj/img/angle-up.svg" afterPath="$PROJECT_DIR$/static_my_proj/img/angle-up.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_my_proj/img/close.svg" afterPath="$PROJECT_DIR$/static_my_proj/img/close.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_my_proj/img/next.svg" afterPath="$PROJECT_DIR$/static_my_proj/img/next.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_my_proj/img/prev.svg" afterPath="$PROJECT_DIR$/static_my_proj/img/prev.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tags/__init__.py" afterPath="$PROJECT_DIR$/tags/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tags/admin.py" afterPath="$PROJECT_DIR$/tags/admin.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tags/apps.py" afterPath="$PROJECT_DIR$/tags/apps.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tags/migrations/0001_initial.py" afterPath="$PROJECT_DIR$/tags/migrations/0001_initial.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tags/migrations/__init__.py" afterPath="$PROJECT_DIR$/tags/migrations/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tags/models.py" afterPath="$PROJECT_DIR$/tags/models.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tags/shell_commands.py" afterPath="$PROJECT_DIR$/tags/shell_commands.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tags/tests.py" afterPath="$PROJECT_DIR$/tags/tests.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tags/views.py" afterPath="$PROJECT_DIR$/tags/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/base.html" afterPath="$PROJECT_DIR$/templates/base.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/base/about.html" afterPath="$PROJECT_DIR$/templates/base/about.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/base/css.html" afterPath="$PROJECT_DIR$/templates/base/css.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/base/js.html" afterPath="$PROJECT_DIR$/templates/base/js.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/base/list.html" afterPath="$PROJECT_DIR$/templates/base/list.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/base/navbar.html" afterPath="$PROJECT_DIR$/templates/base/navbar.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/base/service.html" afterPath="$PROJECT_DIR$/templates/base/service.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/base/slider.html" afterPath="$PROJECT_DIR$/templates/base/slider.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/booking/booking.html" afterPath="$PROJECT_DIR$/templates/booking/booking.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/contact/view.html" afterPath="$PROJECT_DIR$/templates/contact/view.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/footer.html" afterPath="$PROJECT_DIR$/templates/footer.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/home_page.html" afterPath="$PROJECT_DIR$/templates/home_page.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/home_page1.html" afterPath="$PROJECT_DIR$/templates/home_page1.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,50 +176,50 @@
       <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="233">
-              <caret line="33" column="26" lean-forward="false" selection-start-line="33" selection-start-column="26" selection-end-line="33" selection-end-column="26" />
+            <state relative-caret-position="244">
+              <caret line="26" column="26" lean-forward="false" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="navbar.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/base/navbar.html">
+      <file leaf-file-name="footer.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/footer.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="3" column="158" lean-forward="false" selection-start-line="3" selection-start-column="158" selection-end-line="3" selection-end-column="158" />
+            <state relative-caret-position="347">
+              <caret line="56" column="64" lean-forward="false" selection-start-line="56" selection-start-column="64" selection-end-line="56" selection-end-column="64" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="css.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/base/css.html">
+      <file leaf-file-name="list.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/base/list.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="20" column="97" lean-forward="true" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="97" />
+            <state relative-caret-position="306">
+              <caret line="17" column="4" lean-forward="false" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ecommerce/urls.py">
+      <file leaf-file-name="product.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/base/product.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="32" column="15" lean-forward="false" selection-start-line="32" selection-start-column="15" selection-end-line="32" selection-end-column="15" />
+            <state relative-caret-position="0">
+              <caret line="0" column="4" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="62" selection-end-column="17" />
               <folding>
-                <marker date="1507567794193" expanded="true" signature="1233:2105" ph="..." />
+                <element signature="n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#section#1;n#!!top" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="view.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/contact/view.html">
+      <file leaf-file-name="core.min.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static_my_proj/js/food/core.min.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="558">
-              <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -70,49 +229,47 @@
         <entry file="file://$PROJECT_DIR$/templates/home_page1.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="36">
-              <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+              <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="footer.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/templates/footer.html">
+      <file leaf-file-name="service.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/base/service.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="56" column="64" lean-forward="false" selection-start-line="56" selection-start-column="64" selection-end-line="56" selection-end-column="64" />
+            <state relative-caret-position="378">
+              <caret line="21" column="44" lean-forward="false" selection-start-line="21" selection-start-column="40" selection-end-line="21" selection-end-column="44" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.default.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static_my_proj/css/style.default.css">
+      <file leaf-file-name="base (copy).html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/base (copy).html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="8" column="28" lean-forward="true" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
+            <state relative-caret-position="383">
+              <caret line="36" column="38" lean-forward="false" selection-start-line="36" selection-start-column="38" selection-end-line="36" selection-end-column="38" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="slider.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/base/slider.html">
+      <file leaf-file-name="js.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/base/js.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="68" column="75" lean-forward="false" selection-start-line="68" selection-start-column="75" selection-end-line="68" selection-end-column="75" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#4;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="306">
+              <caret line="17" column="0" lean-forward="false" selection-start-line="14" selection-start-column="8" selection-end-line="17" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="about.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/base/about.html">
+      <file leaf-file-name="css.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/base/css.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="36">
-              <caret line="2" column="62" lean-forward="false" selection-start-line="2" selection-start-column="62" selection-end-line="2" selection-end-column="62" />
+            <state relative-caret-position="432">
+              <caret line="24" column="8" lean-forward="false" selection-start-line="24" selection-start-column="8" selection-end-line="27" selection-end-column="71" />
               <folding />
             </state>
           </provider>
@@ -129,14 +286,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>../static</find>
-      <find>css/</find>
-      <find>text-center</find>
-      <find>about</find>
-      <find>padding-top: 150px</find>
-      <find>Balaram’s</find>
-      <find>section {</find>
-      <find>padding-top</find>
       <find>margin-top</find>
       <find>static/</find>
       <find>navbar-brand</find>
@@ -147,12 +296,33 @@
       <find>768px</find>
       <find>shrink</find>
       <find>shrin</find>
+      <find>icon</find>
+      <find>&gt; a</find>
+      <find>/* display: inline-block; */</find>
+      <find>list</find>
+      <find>.shell</find>
+      <find>owl-carousel</find>
+      <find>images</find>
+      <find>owl-stage-outer</find>
+      <find>product-categories-content</find>
+      <find>product-categories-image</find>
+      <find>owl-item active</find>
+      <find>active</find>
+      <find>owl-i</find>
+      <find>31628</find>
+      <find>Carousel</find>
+      <find>..static/</find>
+      <find>section-50</find>
+      <find>meat</find>
+      <find>What People Say</find>
+      <find>beef</find>
     </findStrings>
     <replaceStrings>
       <replace>static</replace>
       <replace>Mohanjicaters</replace>
       <replace>static/css/</replace>
       <replace>../static/</replace>
+      <replace>../static/img/</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -166,25 +336,30 @@
         <option value="$PROJECT_DIR$/ecommerce/settings.py" />
         <option value="$PROJECT_DIR$/templates/about.html" />
         <option value="$USER_HOME$/theme/italiano-1-0-bootstrapious/index.html" />
-        <option value="$PROJECT_DIR$/templates/base/js.html" />
         <option value="$PROJECT_DIR$/templates/base/list.html" />
         <option value="$PROJECT_DIR$/templates/home_page.html" />
-        <option value="$PROJECT_DIR$/ecommerce/urls.py" />
         <option value="$PROJECT_DIR$/ecommerce/views.py" />
         <option value="$PROJECT_DIR$/templates/base/service.html" />
-        <option value="$PROJECT_DIR$/products/templates/products/list.html" />
         <option value="$PROJECT_DIR$/static_my_proj/css/main.css" />
-        <option value="$PROJECT_DIR$/products/templates/products/snippets/card.html" />
         <option value="$PROJECT_DIR$/templates/contact/footer.html" />
-        <option value="$PROJECT_DIR$/templates/base.html" />
         <option value="$PROJECT_DIR$/templates/contact/view.html" />
-        <option value="$PROJECT_DIR$/templates/home_page1.html" />
         <option value="$PROJECT_DIR$/templates/base/about.html" />
         <option value="$PROJECT_DIR$/templates/base/slider.html" />
-        <option value="$PROJECT_DIR$/templates/base/css.html" />
         <option value="$PROJECT_DIR$/templates/base/navbar.html" />
-        <option value="$PROJECT_DIR$/static_my_proj/css/style.default.css" />
         <option value="$PROJECT_DIR$/templates/footer.html" />
+        <option value="$PROJECT_DIR$/products/templates/products/snippets/card.html" />
+        <option value="$PROJECT_DIR$/static_my_proj/css/style.default.css" />
+        <option value="$PROJECT_DIR$/templates/home_page1.html" />
+        <option value="$PROJECT_DIR$/products/templates/products/list.html" />
+        <option value="$PROJECT_DIR$/products/views.py" />
+        <option value="$PROJECT_DIR$/products/urls.py" />
+        <option value="$PROJECT_DIR$/ecommerce/urls.py" />
+        <option value="$PROJECT_DIR$/static_my_proj/css/style.css" />
+        <option value="$PROJECT_DIR$/templates/base.html" />
+        <option value="$PROJECT_DIR$/templates/base/js.html" />
+        <option value="$PROJECT_DIR$/templates/base/css.html" />
+        <option value="$PROJECT_DIR$/templates/base (copy).html" />
+        <option value="$PROJECT_DIR$/templates/base/product.html" />
       </list>
     </option>
   </component>
@@ -214,67 +389,63 @@
         <subPane>
           <expand>
             <path>
-              <item name="shopping" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shopping" type="462c0819:PsiDirectoryNode" />
+              <item name="mohanjicaters" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mohanjicaters" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="shopping" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shopping" type="462c0819:PsiDirectoryNode" />
-              <item name="ecommerce" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shopping" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shopping" type="462c0819:PsiDirectoryNode" />
+              <item name="mohanjicaters" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mohanjicaters" type="462c0819:PsiDirectoryNode" />
               <item name="products" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="shopping" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shopping" type="462c0819:PsiDirectoryNode" />
+              <item name="mohanjicaters" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mohanjicaters" type="462c0819:PsiDirectoryNode" />
               <item name="products" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="shopping" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shopping" type="462c0819:PsiDirectoryNode" />
+              <item name="mohanjicaters" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mohanjicaters" type="462c0819:PsiDirectoryNode" />
               <item name="products" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
               <item name="products" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="shopping" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shopping" type="462c0819:PsiDirectoryNode" />
+              <item name="mohanjicaters" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mohanjicaters" type="462c0819:PsiDirectoryNode" />
               <item name="products" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
               <item name="products" type="462c0819:PsiDirectoryNode" />
               <item name="snippets" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="shopping" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shopping" type="462c0819:PsiDirectoryNode" />
+              <item name="mohanjicaters" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mohanjicaters" type="462c0819:PsiDirectoryNode" />
               <item name="static_my_proj" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="shopping" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shopping" type="462c0819:PsiDirectoryNode" />
+              <item name="mohanjicaters" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mohanjicaters" type="462c0819:PsiDirectoryNode" />
               <item name="static_my_proj" type="462c0819:PsiDirectoryNode" />
               <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="shopping" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shopping" type="462c0819:PsiDirectoryNode" />
+              <item name="mohanjicaters" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mohanjicaters" type="462c0819:PsiDirectoryNode" />
+              <item name="static_my_proj" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+              <item name="template" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mohanjicaters" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mohanjicaters" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="shopping" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shopping" type="462c0819:PsiDirectoryNode" />
+              <item name="mohanjicaters" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mohanjicaters" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
               <item name="base" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shopping" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shopping" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="contact" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -288,12 +459,13 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/products/templates/products" />
+      <recent name="$PROJECT_DIR$/templates/base" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/templates/base" />
       <recent name="$PROJECT_DIR$/templates" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/templates/base" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -325,10 +497,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="-4" width="1303" height="780" extended-state="6" />
+    <frame x="65" y="-4" width="1377" height="912" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29285166" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29236364" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -347,6 +519,26 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29236364" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="UnknownFeatures">
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.css" />
@@ -361,87 +553,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/templates/base/css.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="15" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1980">
-          <caret line="134" column="0" lean-forward="false" selection-start-line="134" selection-start-column="0" selection-end-line="134" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/products/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/products/templates/products/list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4734">
-          <caret line="263" column="30" lean-forward="false" selection-start-line="252" selection-start-column="28" selection-end-line="263" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ecommerce/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static_my_proj/css/style.default.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="17" column="17" lean-forward="false" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/products/templates/products/featured-detail.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/products/templates/products/detail.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/home_page.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="828">
-          <caret line="46" column="149" lean-forward="false" selection-start-line="46" selection-start-column="149" selection-end-line="46" selection-end-column="149" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/products/templates/products/snippets/card.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" column="6" lean-forward="true" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/products/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/products/templates/products/snippets/card.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -481,18 +592,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4752">
           <caret line="264" column="67" lean-forward="false" selection-start-line="264" selection-start-column="67" selection-end-line="264" selection-end-column="67" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/products/templates/products/featured-detail.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/products/templates/products/detail.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -521,35 +624,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/base/js.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" column="24" lean-forward="false" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/theme/italiano-1-0-bootstrapious/index.html" />
     <entry file="file://$USER_HOME$/theme/eCommerce-master/src/products/templates/products/list.html" />
     <entry file="file://$PROJECT_DIR$/templates/base/card.html" />
-    <entry file="file://$PROJECT_DIR$/../../italiano-1-0-bootstrapious/product.html" />
+    <entry file="file://$USER_HOME$/italiano-1-0-bootstrapious/product.html" />
     <entry file="file://$PROJECT_DIR$/products/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
           <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/products/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="5" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/products/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="846">
-          <caret line="47" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -560,35 +642,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/base/service.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="26" column="153" lean-forward="true" selection-start-line="26" selection-start-column="153" selection-end-line="26" selection-end-column="153" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/home_page.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/products/templates/products/list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="56" lean-forward="false" selection-start-line="11" selection-start-column="56" selection-end-line="11" selection-end-column="56" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/base/list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="17" column="4" lean-forward="true" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -596,84 +653,104 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
           <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="5" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/products/templates/products/snippets/card.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" column="34" lean-forward="false" selection-start-line="1" selection-start-column="34" selection-end-line="1" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../theme/italiano-1-0-bootstrapious/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="517">
-          <caret line="1298" column="22" lean-forward="false" selection-start-line="1271" selection-start-column="12" selection-end-line="1298" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ecommerce/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1413">
-          <caret line="111" column="11" lean-forward="false" selection-start-line="111" selection-start-column="11" selection-end-line="111" selection-end-column="11" />
-          <folding>
-            <element signature="e#0#67#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/contact/footer.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="8" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="69" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="33" column="26" lean-forward="false" selection-start-line="33" selection-start-column="26" selection-end-line="33" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ecommerce/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="32" column="15" lean-forward="false" selection-start-line="32" selection-start-column="15" selection-end-line="32" selection-end-column="15" />
-          <folding>
-            <marker date="1507567794193" expanded="true" signature="1233:2105" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/home_page1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/theme/italiano-1-0-bootstrapious/index.html" />
+    <entry file="file://$PROJECT_DIR$/templates/contact/footer.html" />
     <entry file="file://$PROJECT_DIR$/templates/base/slider.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
+        <state relative-caret-position="1224">
           <caret line="68" column="75" lean-forward="false" selection-start-line="68" selection-start-column="75" selection-end-line="68" selection-end-column="75" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#4;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/contact/view.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="558">
+        <state relative-caret-position="486">
+          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base/about.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="64" lean-forward="false" selection-start-line="2" selection-start-column="64" selection-end-line="2" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/products/templates/products/snippets/card.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static_my_proj/css/style.default.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="212" column="27" lean-forward="true" selection-start-line="212" selection-start-column="27" selection-end-line="212" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ecommerce/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="732">
+          <caret line="111" column="11" lean-forward="false" selection-start-line="111" selection-start-column="11" selection-end-line="111" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/products/templates/products/detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/products/templates/products/list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="21" lean-forward="false" selection-start-line="0" selection-start-column="21" selection-end-line="0" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ecommerce/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
           <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/products/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="59" lean-forward="false" selection-start-line="8" selection-start-column="59" selection-end-line="8" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/products/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="11" column="41" lean-forward="false" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="41" />
+          <folding>
+            <element signature="e#36#67#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static_my_proj/css/iframe.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static_my_proj/js/iframe.js" />
+    <entry file="file://$PROJECT_DIR$/products/templates/products/productlist.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -681,40 +758,130 @@
     <entry file="file://$PROJECT_DIR$/templates/base/navbar.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
-          <caret line="3" column="158" lean-forward="false" selection-start-line="3" selection-start-column="158" selection-end-line="3" selection-end-column="158" />
+          <caret line="3" column="116" lean-forward="false" selection-start-line="3" selection-start-column="103" selection-end-line="3" selection-end-column="116" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/base/css.html">
+    <entry file="file://$PROJECT_DIR$/static_my_proj/css/css.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="20" column="97" lean-forward="true" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="97" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static_my_proj/css/style.default.css">
+    <entry file="file://$PROJECT_DIR$/static_my_proj/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="28" lean-forward="true" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
+        <state relative-caret-position="569304">
+          <caret line="31628" column="40" lean-forward="false" selection-start-line="31628" selection-start-column="40" selection-end-line="31628" selection-end-column="40" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/base/about.html">
+    <entry file="file://$PROJECT_DIR$/static_my_proj/js/owl.carousel.min.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="62" lean-forward="false" selection-start-line="2" selection-start-column="62" selection-end-line="2" selection-end-column="62" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static_my_proj/css/template/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185785">
+          <caret line="29318" column="1" lean-forward="true" selection-start-line="29318" selection-start-column="1" selection-end-line="29318" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static_my_proj/css/template/css.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base/list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="17" column="4" lean-forward="false" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base/service.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="21" column="44" lean-forward="false" selection-start-line="21" selection-start-column="40" selection-end-line="21" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="244">
+          <caret line="26" column="26" lean-forward="false" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/footer.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
+        <state relative-caret-position="347">
           <caret line="56" column="64" lean-forward="false" selection-start-line="56" selection-start-column="64" selection-end-line="56" selection-end-column="64" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/home_page1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base/js.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="14" selection-start-column="8" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base/css.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="24" column="8" lean-forward="false" selection-start-line="24" selection-start-column="8" selection-end-line="27" selection-end-column="71" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base (copy).html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="383">
+          <caret line="36" column="38" lean-forward="false" selection-start-line="36" selection-start-column="38" selection-end-line="36" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static_my_proj/js/food/core.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base/product.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="4" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="62" selection-end-column="17" />
+          <folding>
+            <element signature="n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#section#1;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
