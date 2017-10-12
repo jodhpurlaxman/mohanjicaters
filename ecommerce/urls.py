@@ -31,7 +31,8 @@ from .views import (
         )
 
 urlpatterns = [
-    url(r'^$', ProductListView.as_view(), name='list'),
+    url(r'^$', home_page, name=''),
+    url(r'^home$', ProductListView.as_view(), name='list'),
     url(r'^about/$', about_page, name='about'),
     url(r'^contact/$', contact_page, name='contact'),
     url(r'^login/$', login_page, name='login'),

@@ -48,10 +48,10 @@ def home_page(request):
     # print(request.session.get("first_name", "Unknown"))
     # request.session['first_name']
     context = {
-        "title":"Hello World!",
-        "content":" Welcome to the homepage.",
-
+        "title":"Mohanjicaters",
+        "content":" Coming Soon.",
     }
+    return render(request, "home_page.html", context)
 
     product_list = Product.objects.all()
     context["product_list"] = product_list;
