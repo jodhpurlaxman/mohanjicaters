@@ -1,21 +1,13 @@
-
-<div class="col-sm-4 productsblock">
-    <a href="/products">
-    <div class="item">
-        <div class="discount">
-            <span>40% <br> Off</span>
-        </div>
-        {% if instance.image %}
-        <div class="profile">
-            <img src="{{ instance.image.url }}" alt="{{ instance.title}} Dish Name" class="img-responsive">
-        </div>
+<div class="item">
+  <div class="product-featured text-center">
+       {% if instance.image %}
+    <div class="product-featured-images"><img src="{{ instance.image.url }}" alt="" width="270" height="204" class="img-responsive"/> </div>
         {% endif %}
-        <div class="text">
-            <h4>{{ instance.title }}</h4>
-            <p class="after text-primary text-large">{{ instance.price }}$</p>
-            <p class="before text-muted text-large">{{ instance.price }}$</p>
-        </div>
+      <div class="product-featured-rating"><span class="icon material-icons-grade icon-saffron icon-xs-small"></span><span class="icon material-icons-grade icon-saffron icon-xs-small"></span><span class="icon material-icons-grade icon-saffron icon-xs-small"></span><span class="icon material-icons-grade icon-saffron icon-xs-small"></span><span class="icon material-icons-star_half icon-saffron icon-xs-small"></span></div>
+    <div class="product-featured-title">
+      <div class="h7 text-sbold"><a href="shop-single-products.html" class="text-chateau-green">{{ instance.title }}</a></div>
     </div>
-
+    <div class="product-featured-price"><span class="product-price-new h6 text-sbold">{{ instance.price }}INR</span><span class="product-price-old h7 text-light text-regular">{{ instance.price }}INR</span></div>
+    <div class="product-featured-block-hover"><a href="shop-cart.html" class="btn btn-icon btn-icon-left btn-success"><span class="icon fl-outicons-shopping-cart13"></span>Add to cart</a></div>
+  </div>
 </div>
-
