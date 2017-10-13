@@ -1,0 +1,38 @@
+<section class="section-50 bg-image bg-fixed bg-image-1 section-sm-75 section-md-115">
+      <div class="shell">
+        <h3 class="heading-3 text-center">Feedback Form</h3>
+        <div class="range range-sm-center">
+          <div class="cell-md-8 cell-sm-10">
+            <form data-form-output="form-output-global" data-form-type="contact" method="post" action="#" class="rd-mailform text-left">
+              <div class="range">
+                <div class="cell-sm-6">
+                  <div class="form-group">
+                    <label for="contact-name" class="form-label">First Name</label>
+                    <input id="contact-name" type="text" name="name" data-constraints="@Required" class="form-control">
+                  </div>
+                </div>
+                <div class="cell-sm-6">
+                  <div class="form-group">
+                    <label for="contact-last-name" class="form-label">Last Name</label>
+                    <input id="contact-last-name" type="text" name="name" data-constraints="@Required" class="form-control">
+                  </div>
+                </div>
+                <div class="cell-sm-12 offset-top-40 offset-sm-top-25">
+                  <div class="form-group">
+                    <label for="contact-email" class="form-label">E-mail</label>
+                    <input id="contact-email" type="email" name="email" data-constraints="@Required @Email" class="form-control">
+                  </div>
+                </div>
+                <div class="cell-sm-12 offset-top-40 offset-sm-top-25 text-center">
+                  <div class="form-group">
+                    <label for="contact-message" class="form-label">Message</label>
+                    <textarea id="contact-message" name="message" data-constraints="@Required" class="form-control"></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-primary offset-top-25 btn-md-block">send</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>

@@ -1384,8 +1384,3 @@ $(document).ready(function() {
 })();
 
 
-//purchase
-var imported = document.createElement('script');
-imported.src = '../../themeTemplate/js/index.js';
-document.body.appendChild(imported);
-$("body").append( $( '<a class="link-purchase" href="../../themeTemplate/checkout.html?param=f02"><i title="Copy to use cart-plus" aria-hidden="true" class="fa fa-fw">&#xf217;</i> <span>PURCHASE</span></a>' ) );

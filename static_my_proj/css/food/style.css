@@ -6183,8 +6183,8 @@ button.close {
 /** 1.2  Glyphicons */
 @font-face {
     font-family: 'Glyphicons Halflings';
-    src: url("../fonts/glyphicons-halflings-regular.eot");
-    src: url("../fonts/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/glyphicons-halflings-regular.woff2") format("woff2"), url("../fonts/glyphicons-halflings-regular.woff") format("woff"), url("../fonts/glyphicons-halflings-regular.ttf") format("truetype"), url("../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg");
+    src: url("../../../static/fonts/glyphicons-halflings-regular.eot");
+    src: url("../../../static/fonts/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("../../../static/fonts/glyphicons-halflings-regular.woff2") format("woff2"), url("../../../static/fonts/glyphicons-halflings-regular.woff") format("woff"), url("../../../static/fonts/glyphicons-halflings-regular.ttf") format("truetype"), url("../../../static/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg");
 }
 
 .glyphicon {
@@ -7250,8 +7250,8 @@ button.close {
 
 @font-face {
     font-family: 'Glyphicons Halflings';
-    src: url("../fonts/glyphicons-halflings-regular.eot");
-    src: url("../fonts/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/glyphicons-halflings-regular.woff2") format("woff2"), url("../fonts/glyphicons-halflings-regular.woff") format("woff"), url("../fonts/glyphicons-halflings-regular.ttf") format("truetype"), url("../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg");
+    src: url("../../../static/fonts/glyphicons-halflings-regular.eot");
+    src: url("../../../static/fonts/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("../../../static/fonts/glyphicons-halflings-regular.woff2") format("woff2"), url("../../../static/fonts/glyphicons-halflings-regular.woff") format("woff"), url("../../../static/fonts/glyphicons-halflings-regular.ttf") format("truetype"), url("../../../static/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg");
 }
 
 .glyphicon {
@@ -13234,8 +13234,8 @@ a.icon-boulder:hover {
 
 @font-face {
     font-family: 'FontAwesome';
-    src: url("../fonts/fontawesome-webfont.eot?v=4.5.0");
-    src: url("../fonts/fontawesome-webfont.eot?#iefix&v=4.5.0") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff2?v=4.5.0") format("woff2"), url("../fonts/fontawesome-webfont.woff?v=4.5.0") format("woff"), url("../fonts/fontawesome-webfont.ttf?v=4.5.0") format("truetype"), url("../fonts/fontawesome-webfont.svg?v=4.5.0#fontawesomeregular") format("svg");
+    src: url("../../../static/fonts/fontawesome-webfont.eot?v=4.5.0");
+    src: url("../../../static/fonts/fontawesome-webfont.eot?#iefix&v=4.5.0") format("embedded-opentype"), url("../../../static/fonts/fontawesome-webfont.woff2?v=4.5.0") format("woff2"), url("../../../static/fonts/fontawesome-webfont.woff?v=4.5.0") format("woff"), url("../../../static/fonts/fontawesome-webfont.ttf?v=4.5.0") format("truetype"), url("../../../static/fonts/fontawesome-webfont.svg?v=4.5.0#fontawesomeregular") format("svg");
     font-weight: normal;
     font-style: normal;
 }
@@ -15966,8 +15966,8 @@ a.icon-boulder:hover {
 
 @font-face {
     font-family: "Material Design Icons";
-    src: url("../fonts/materialdesignicons-webfont.eot?v=1.4.57");
-    src: url("../fonts/materialdesignicons-webfont.eot?#iefix&v=1.4.57") format("embedded-opentype"), url("../fonts/materialdesignicons-webfont.woff2?v=1.4.57") format("woff2"), url("../fonts/materialdesignicons-webfont.woff?v=1.4.57") format("woff"), url("../fonts/materialdesignicons-webfont.ttf?v=1.4.57") format("truetype"), url("../fonts/materialdesignicons-webfont.svg?v=1.4.57#materialdesigniconsregular") format("svg");
+    src: url("../../../static/fonts/materialdesignicons-webfont.eot?v=1.4.57");
+    src: url("../../../static/fonts/materialdesignicons-webfont.eot?#iefix&v=1.4.57") format("embedded-opentype"), url("../../../static/fonts/materialdesignicons-webfont.woff2?v=1.4.57") format("woff2"), url("../../../static/fonts/materialdesignicons-webfont.woff?v=1.4.57") format("woff"), url("../../../static/fonts/materialdesignicons-webfont.ttf?v=1.4.57") format("truetype"), url("../../../static/fonts/materialdesignicons-webfont.svg?v=1.4.57#materialdesigniconsregular") format("svg");
     font-weight: normal;
     font-style: normal;
 }
@@ -29457,8 +29457,8 @@ img + p {
 
 @font-face {
     font-family: "fl-flat-icons-set-2";
-    src: url("../fonts/fl-flat-icons-set-2.eot");
-    src: url("../fonts/fl-flat-icons-set-2.eot#iefix") format("embedded-opentype"), url("../fonts/fl-flat-icons-set-2.woff") format("woff"), url("../fonts/fl-flat-icons-set-2.ttf") format("truetype"), url("../fonts/fl-flat-icons-set-2.svg") format("svg");
+    src: url("../../../static/fonts/fl-flat-icons-set-2.eot");
+    src: url("../../../static/fonts/fl-flat-icons-set-2.eot#iefix") format("embedded-opentype"), url("../../../static/fonts/fl-flat-icons-set-2.woff") format("woff"), url("../../../static/fonts/fl-flat-icons-set-2.ttf") format("truetype"), url("../../../static/fonts/fl-flat-icons-set-2.svg") format("svg");
     font-weight: normal;
     font-style: normal;
 }
@@ -29596,8 +29596,8 @@ img + p {
 
 @font-face {
     font-family: "fl-bigmug-line";
-    src: url("../fonts/fl-bigmug-line.eot");
-    src: url("../fonts/fl-bigmug-line.eot#iefix") format("embedded-opentype"), url("../fonts/fl-bigmug-line.woff") format("woff"), url("../fonts/fl-bigmug-line.ttf") format("truetype"), url("../fonts/fl-bigmug-line.svg") format("svg");
+    src: url("../../../static/fonts/fl-bigmug-line.eot");
+    src: url("../../../static/fonts/fl-bigmug-line.eot#iefix") format("embedded-opentype"), url("../../../static/fonts/fl-bigmug-line.woff") format("woff"), url("../../../static/fonts/fl-bigmug-line.ttf") format("truetype"), url("../../../static/fonts/fl-bigmug-line.svg") format("svg");
     font-weight: normal;
     font-style: normal;
 }
@@ -30503,8 +30503,8 @@ img + p {
 
 @font-face {
     font-family: "fl-outicons";
-    src: url("../fonts/fl-outicons.eot");
-    src: url("../fonts/fl-outicons.eot#iefix") format("embedded-opentype"), url("../fonts/fl-outicons.woff") format("woff"), url("../fonts/fl-outicons.ttf") format("truetype"), url("../fonts/fl-outicons.svg") format("svg");
+    src: url("../../../static/fonts/fl-outicons.eot");
+    src: url("../../../static/fonts/fl-outicons.eot#iefix") format("embedded-opentype"), url("../../../static/fonts/fl-outicons.woff") format("woff"), url("../../../static/fonts/fl-outicons.ttf") format("truetype"), url("../../../static/fonts/fl-outicons.svg") format("svg");
     font-weight: normal;
     font-style: normal;
 }
@@ -31189,8 +31189,8 @@ img + p {
 
 @font-face {
     font-family: "fl-crisp-icons";
-    src: url("../fonts/fl-crisp-icons.eot");
-    src: url("../fonts/fl-crisp-icons.eot#iefix") format("embedded-opentype"), url("../fonts/fl-crisp-icons.woff") format("woff"), url("../fonts/fl-crisp-icons.ttf") format("truetype"), url("../fonts/fl-crisp-icons.svg") format("svg");
+    src: url("../../../static/fonts/fl-crisp-icons.eot");
+    src: url("../../../static/fonts/fl-crisp-icons.eot#iefix") format("embedded-opentype"), url("../../../static/fonts/fl-crisp-icons.woff") format("woff"), url("../../../static/fonts/fl-crisp-icons.ttf") format("truetype"), url("../../../static/fonts/fl-crisp-icons.svg") format("svg");
     font-weight: normal;
     font-style: normal;
 }
@@ -31408,8 +31408,8 @@ img + p {
 
 @font-face {
     font-family: "fl-chapps";
-    src: url("../fonts/fl-chapps.eot");
-    src: url("../fonts/fl-chapps.eot#iefix") format("embedded-opentype"), url("../fonts/fl-chapps.woff") format("woff"), url("../fonts/fl-chapps.ttf") format("truetype"), url("../fonts/fl-chapps.svg") format("svg");
+    src: url("../../../static/fonts/fl-chapps.eot");
+    src: url("../../../static/fonts/fl-chapps.eot#iefix") format("embedded-opentype"), url("../../../static/fonts/fl-chapps.woff") format("woff"), url("../../../static/fonts/fl-chapps.ttf") format("truetype"), url("../../../static/fonts/fl-chapps.svg") format("svg");
     font-weight: normal;
     font-style: normal;
 }
@@ -32402,9 +32402,9 @@ img + p {
     font-family: 'Material Icons';
     font-style: normal;
     font-weight: 400;
-    src: url(../fonts/MaterialIcons-Regular.eot);
+    src: url(../../../static/fonts/MaterialIcons-Regular.eot);
     /* For IE6-8 */
-    src: local("Material Icons"), local("MaterialIcons-Regular"), url(../fonts/MaterialIcons-Regular.woff2) format("woff2"), url(../fonts/MaterialIcons-Regular.woff) format("woff"), url(../fonts/MaterialIcons-Regular.ttf) format("truetype");
+    src: local("Material Icons"), local("MaterialIcons-Regular"), url(../../../static/fonts/MaterialIcons-Regular.woff2) format("woff2"), url(../../../static/fonts/MaterialIcons-Regular.woff) format("woff"), url(../../../static/fonts/MaterialIcons-Regular.ttf) format("truetype");
 }
 
 .material-icons-ico,
@@ -36196,8 +36196,8 @@ img + p {
 
 @font-face {
     font-family: "material-design";
-    src: url("../fonts/material-design.eot");
-    src: url("../fonts/material-design.eot#iefix") format("embedded-opentype"), url("../fonts/material-design.woff") format("woff"), url("../fonts/material-design.ttf") format("truetype"), url("../fonts/material-design.svg") format("svg");
+    src: url("../../../static/fonts/material-design.eot");
+    src: url("../../../static/fonts/material-design.eot#iefix") format("embedded-opentype"), url("../../../static/fonts/material-design.woff") format("woff"), url("../../../static/fonts/material-design.ttf") format("truetype"), url("../../../static/fonts/material-design.svg") format("svg");
     font-weight: normal;
     font-style: normal;
 }
@@ -37989,8 +37989,8 @@ img + p {
 
 @font-face {
     font-family: "fl-free-chaos";
-    src: url("../fonts/fl-free-chaos.eot");
-    src: url("../fonts/fl-free-chaos.eot#iefix") format("embedded-opentype"), url("../fonts/fl-free-chaos.woff") format("woff"), url("../fonts/fl-free-chaos.ttf") format("truetype"), url("../fonts/fl-free-chaos.svg") format("svg");
+    src: url("../../../static/fonts/fl-free-chaos.eot");
+    src: url("../../../static/fonts/fl-free-chaos.eot#iefix") format("embedded-opentype"), url("../../../static/fonts/fl-free-chaos.woff") format("woff"), url("../../../static/fonts/fl-free-chaos.ttf") format("truetype"), url("../../../static/fonts/fl-free-chaos.svg") format("svg");
     font-weight: normal;
     font-style: normal;
 }
