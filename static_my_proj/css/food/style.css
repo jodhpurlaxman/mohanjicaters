@@ -37907,7 +37907,7 @@ img + p {
 
 .breadcrumbs-wrap {
     color: #fff;
-    background-image: url(../images/breadcrumbs.jpg);
+    background-image: url(../../../static/img/breadcrumbs.jpg);
     -webkit-background-size: cover;
     background-size: cover;
     background-repeat: no-repeat;

@@ -1,33 +1,101 @@
 {% extends "base.html" %}
 {% block contact %}
-    <section id="contact" class="contact">
-        <div id="map"></div>
-        <div class="container text-center">
-            <div class="form-holder">
-                <header>
-                    <h2>Contact Us</h2>
-                    <h3>Feel free to contact us</h3>
-                </header>
-
-                <form method="get" action="#" id="contact-form">
-                    <div class="row">
-                        <label for="user-name" class="col-sm-6 unique">Name
-                            <input type="text" name="username" id="user-name" required>
-                        </label>
-                        <label for="user-email" class="col-sm-6 unique">Email
-                            <input type="email" name="useremail" id="user-email" required>
-                        </label>
-                        <label for="message" class="col-sm-12 unique">Your Message
-                            <textarea name="message" id="message" required></textarea>
-                        </label>
-                        <div class="col-sm-12">
-                            <button type="submit" class="btn-unique" id="submit">Send</button>
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </div>
+    <section class="section-50 breadcrumbs-wrap">
+      <div class="shell text-center">
+        <h2>Contact Us</h2>
+        <ul class="breadcrumbs-custom">
+          <li><a href="index.html">Home</a><span>/</span></li>
+          <li class="active">Contact Us </li>
+        </ul>
+      </div>
     </section>
+    <section class="section-50 section-sm-75 section-md-115">
+      <div class="shell">
+        <div class="range">
+          <div class="cell-md-8 text-center">
+            <h3 class="heading-3 text-center">Get In Touch</h3>
+            <p class="offset-top-30 offset-md-top-40 offset-lg-top-60">We are available 24/7 by fax, e-mail or by phone. You can also use the quick contact form to ask a question about our services and products. We would be pleased to answer your questions or offer any help.</p>
+            <form data-form-output="form-output-global" data-form-type="contact" method="post" action="#" class="rd-mailform text-left offset-top-30 offset-md-top-50">
+              <div class="range">
+                <div class="cell-sm-6">
+                  <div class="form-group">
+                    <label for="contact-name" class="form-label">First Name</label>
+                    <input id="contact-name" type="text" name="name" data-constraints="@Required" class="form-control">
+                  </div>
+                </div>
+                <div class="cell-sm-6">
+                  <div class="form-group">
+                    <label for="contact-last-name" class="form-label">Last Name</label>
+                    <input id="contact-last-name" type="text" name="last-name" data-constraints="@Required" class="form-control">
+                  </div>
+                </div>
+                <div class="cell-sm-12 offset-top-40 offset-sm-top-25">
+                  <div class="form-group">
+                    <label for="contact-email" class="form-label">E-mail</label>
+                    <input id="contact-email" type="email" name="email" data-constraints="@Required @Email" class="form-control">
+                  </div>
+                </div>
+                <div class="cell-sm-12 offset-top-40 offset-sm-top-25 text-center">
+                  <div class="form-group">
+                    <label for="contact-message" class="form-label">Message</label>
+                    <textarea id="contact-message" name="message" data-constraints="@Required" class="form-control"></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-primary offset-top-25 btn-md-block">send</button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="cell-md-4 inset-md-left-30 inset-lg-left-70 offset-top-55 offset-md-top-0">
+            <div class="range text-left inset-lg-left-20">
+              <div class="cell-md-12 cell-sm-6">
+                <div class="offset-lg-top-10"><span class="h6 text-sbold text-bold">Social</span>
+                  <div class="text-subline"></div>
+                  <ul class="list-inline list-inline-md offset-top-20">
+                    <li><a href="#" class="icon icon-boulder icon-xs-middle fa-facebook"></a></li>
+                    <li><a href="#" class="icon icon-boulder icon-xs-middle fa-twitter"></a></li>
+                    <li><a href="#" class="icon icon-boulder icon-xs-middle fa-google"></a></li>
+                    <li><a href="#" class="icon icon-boulder icon-xs-middle fa-youtube"></a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="cell-md-12 cell-sm-6 offset-md-top-55 offset-top-30 offset-sm-top-0"><span class="h6 text-sbold text-bold">Phone</span>
+                <div class="text-subline"></div>
+                <ul class="list-inline list-inline-md offset-top-20">
+                  <li class="text-middle"><span class="icon icon-primary icon-xs-middle fa-phone"></span></li>
+                  <li class="text-middle"><a href="callto:#" class="text-content">1-800-1234-567</a></li>
+                </ul>
+              </div>
+              <div class="cell-md-12 cell-sm-6 offset-md-top-55 offset-top-30"><span class="h6 text-sbold text-bold">Address</span>
+                <div class="text-subline"></div>
+                <ul class="list-inline list-inline-md list-inline-flex inset-lg-right-30 offset-top-20">
+                  <li class="text-middle"><span class="icon icon-primary icon-xs-middle fa-map-marker"></span></li>
+                  <li class="text-middle"><a href="#" class="text-content">4578 Marmora St, San Francisco D04 89GR</a></li>
+                </ul>
+              </div>
+              <div class="cell-md-12 cell-sm-6 offset-md-top-55 offset-top-30"><span class="h6 text-sbold text-bold">Opening Hours</span>
+                <div class="text-subline"></div>
+                <ul class="list-inline list-inline-md list-inline-flex inset-lg-right-10 offset-top-20">
+                  <li class="text-middle"><span class="icon icon-primary icon-xs-small fa-clock-o"></span></li>
+                  <li>
+                    <ul class="list list-default">
+                      <li><span class="text-bold">Monday–Friday:</span> 9:00am–6:00pm </li>
+                      <li><span class="text-bold">Saturday:</span> 10:00am–4:00pm </li>
+                      <li><span class="text-bold">Sunday:</span> 10:00am–1:00pm </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+  <div class="rd-google-map">
+    <div class="overlay rd-google-map__model" onClick="style.pointerEvents='none'"></div>
+    <iframe  class="rd-google-map__model" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387142.8404068987!2d-74.2581973675357!3d40.70583158554698!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2zVGjDoG5oIHBo4buRIE5ldyBZb3JrLCBUaeG7g3UgYmFuZyBOZXcgWW9yaw!5e0!3m2!1svi!2s!4v1480613299202" allowfullscreen></iframe>
+  </div>
+</section>
+</main>
 {% endblock %}
-
-
+{% block footer %}{% include 'footer.html' %}{% endblock %}

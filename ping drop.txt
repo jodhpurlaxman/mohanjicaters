@@ -1,8 +1,0 @@
-Ping statistics for 223.30.124.17:
-    Packets: Sent = 61, Received = 54, Lost = 7 (11% loss),
-Approximate round trip times in milli-seconds:
-    Minimum = 135ms, Maximum = 343ms, Average = 269ms
-Control-C
-^C
-C:\Users\yashwant>
-http://download844.mediafireuserdownload.com/9iyk261ci9ng/6yt6ba0f8bd1n2d/organic_31.rar
