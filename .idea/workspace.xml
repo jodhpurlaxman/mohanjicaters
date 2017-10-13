@@ -2,38 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="20b62df9-fe0e-4c47-a6d1-621c7d196168" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static_my_proj/css/bootstrap.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static_my_proj/css/common.css.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static_my_proj/css/datepicker.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static_my_proj/css/lightbox.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static_my_proj/css/main.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static_my_proj/css/owl.carousel.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static_my_proj/css/slider.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static_my_proj/css/style.default.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static_my_proj/css/template/style.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static_my_proj/css/timepicki.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static_my_proj/js/bootstrap.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static_my_proj/js/datepicker.en.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static_my_proj/js/datepicker.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static_my_proj/js/jquery.ba-cond.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static_my_proj/js/jquery.slitslider.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static_my_proj/js/jquery.validate.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static_my_proj/js/lightbox.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static_my_proj/js/map.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static_my_proj/js/modernizr.custom.79639.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static_my_proj/js/owl.carousel.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static_my_proj/js/script.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static_my_proj/js/smooth.scroll.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static_my_proj/js/timepicki.min.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_my_proj/img/logo.png" afterPath="$PROJECT_DIR$/static_my_proj/img/logo.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_my_proj/css/food/style.css" afterPath="$PROJECT_DIR$/static_my_proj/css/food/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_my_proj/fonts/fl-crisp-icons.svg" afterPath="$PROJECT_DIR$/static_my_proj/fonts/fl-crisp-icons.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_my_proj/js/food/script.js" afterPath="$PROJECT_DIR$/static_my_proj/js/food/script.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/base/about.html" afterPath="$PROJECT_DIR$/templates/base/about.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/base/css.html" afterPath="$PROJECT_DIR$/templates/base/css.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/base/js.html" afterPath="$PROJECT_DIR$/templates/base/js.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/base/navbar.html" afterPath="$PROJECT_DIR$/templates/base/navbar.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/footer.html" afterPath="$PROJECT_DIR$/templates/footer.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -44,83 +15,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/base.html">
+      <file leaf-file-name="appointment.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/contact/appointment.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="22" column="6" lean-forward="false" selection-start-line="22" selection-start-column="6" selection-end-line="22" selection-end-column="6" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding>
-                <marker date="1507913944125" expanded="true" signature="896:1048" ph="..." />
+                <element signature="n#style#0;n#div#0;n#header#0;n#div#0;n#body#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#3;n#body#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="appointment.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/contact/appointment.html">
+      <file leaf-file-name="footer.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/footer.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="478">
-              <caret line="298" column="55" lean-forward="false" selection-start-line="298" selection-start-column="55" selection-end-line="298" selection-end-column="55" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="script.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static_my_proj/js/food/script.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4818">
-              <caret line="1386" column="0" lean-forward="true" selection-start-line="1386" selection-start-column="0" selection-end-line="1386" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="js.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/base/js.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="8" lean-forward="false" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="8" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="css.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/base/css.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="36">
-              <caret line="2" column="67" lean-forward="false" selection-start-line="2" selection-start-column="67" selection-end-line="2" selection-end-column="67" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="navbar.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/templates/base/navbar.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="7" column="238" lean-forward="false" selection-start-line="7" selection-start-column="238" selection-end-line="7" selection-end-column="238" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static_my_proj/css/food/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442865">
-              <caret line="37992" column="248" lean-forward="false" selection-start-line="37992" selection-start-column="248" selection-end-line="37992" selection-end-column="248" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="css.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static_my_proj/css/food/css.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3283">
-              <caret line="38" column="12" lean-forward="false" selection-start-line="38" selection-start-column="12" selection-end-line="38" selection-end-column="12" />
+            <state relative-caret-position="306">
+              <caret line="17" column="155" lean-forward="false" selection-start-line="17" selection-start-column="155" selection-end-line="17" selection-end-column="155" />
               <folding />
             </state>
           </provider>
@@ -137,8 +49,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>owl-i</find>
-      <find>31628</find>
       <find>Carousel</find>
       <find>..static/</find>
       <find>section-50</find>
@@ -166,7 +76,9 @@
       <find>materialdesignicons-webfont.woff2</find>
       <find>fl-crisp-icons.woff</find>
       <find>themeTemplate/js/index.js</find>
+      <find>clean</find>
       <find>../fonts</find>
+      <find>info@demolink.org</find>
     </findStrings>
     <replaceStrings>
       <replace>static</replace>
@@ -206,7 +118,6 @@
         <option value="$PROJECT_DIR$/ecommerce/urls.py" />
         <option value="$PROJECT_DIR$/ecommerce/views.py" />
         <option value="$PROJECT_DIR$/templates/base/product.html" />
-        <option value="$PROJECT_DIR$/templates/footer.html" />
         <option value="$PROJECT_DIR$/templates/base.html" />
         <option value="$PROJECT_DIR$/templates/home_page1.html" />
         <option value="$PROJECT_DIR$/products/templates/products/list.html" />
@@ -222,6 +133,8 @@
         <option value="$PROJECT_DIR$/templates/base/js.html" />
         <option value="$PROJECT_DIR$/templates/base/css.html" />
         <option value="$PROJECT_DIR$/templates/base/navbar.html" />
+        <option value="$PROJECT_DIR$/templates/contact/appointment.html" />
+        <option value="$PROJECT_DIR$/templates/footer.html" />
       </list>
     </option>
   </component>
@@ -232,7 +145,7 @@
     <option name="height" value="772" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
+    <navigator currentView="Scope" currentSubView="Project Files" proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -280,7 +193,22 @@
         </subPane>
       </pane>
       <pane id="Scratches" />
-      <pane id="Scope" />
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <expand>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="shopping" type="cbb8eebc:String" user="shopping" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="shopping" type="cbb8eebc:String" user="shopping" />
+              <item name="templates" type="cbb8eebc:String" user="templates" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -511,13 +439,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/footer.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="702">
-          <caret line="129" column="7" lean-forward="false" selection-start-line="129" selection-start-column="7" selection-end-line="129" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/products/templates/products/list.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="18">
@@ -645,14 +566,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/contact/appointment.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="478">
-          <caret line="298" column="55" lean-forward="false" selection-start-line="298" selection-start-column="55" selection-end-line="298" selection-end-column="55" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static_my_proj/css/common.css.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="201">
@@ -665,6 +578,30 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1194">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base/navbar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="252" lean-forward="false" selection-start-line="8" selection-start-column="252" selection-end-line="8" selection-end-column="252" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base/css.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="67" lean-forward="false" selection-start-line="2" selection-start-column="67" selection-end-line="2" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base/js.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="8" lean-forward="false" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="8" />
           <folding />
         </state>
       </provider>
@@ -687,26 +624,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/base/js.html">
+    <entry file="file://$PROJECT_DIR$/templates/contact/appointment.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="8" lean-forward="false" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="8" />
-          <folding />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#header#0;n#div#0;n#body#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#3;n#body#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/base/css.html">
+    <entry file="file://$PROJECT_DIR$/templates/footer.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="67" lean-forward="false" selection-start-line="2" selection-start-column="67" selection-end-line="2" selection-end-column="67" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/base/navbar.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="238" lean-forward="false" selection-start-line="7" selection-start-column="238" selection-end-line="7" selection-end-column="238" />
+        <state relative-caret-position="306">
+          <caret line="17" column="155" lean-forward="false" selection-start-line="17" selection-start-column="155" selection-end-line="17" selection-end-column="155" />
           <folding />
         </state>
       </provider>
