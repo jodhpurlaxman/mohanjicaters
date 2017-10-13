@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="20b62df9-fe0e-4c47-a6d1-621c7d196168" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/base/navbar.html" afterPath="$PROJECT_DIR$/templates/base/navbar.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/footer.html" afterPath="$PROJECT_DIR$/templates/footer.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ping drop.txt" afterPath="$PROJECT_DIR$/ping drop.txt" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -15,24 +13,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="appointment.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/contact/appointment.html">
+      <file leaf-file-name="ping drop.txt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ping drop.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#header#0;n#div#0;n#body#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#3;n#body#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="footer.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/templates/footer.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="17" column="155" lean-forward="false" selection-start-line="17" selection-start-column="155" selection-end-line="17" selection-end-column="155" />
+            <state relative-caret-position="600">
+              <caret line="5444" column="6" lean-forward="false" selection-start-line="5444" selection-start-column="6" selection-end-line="5444" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -125,7 +110,6 @@
         <option value="$PROJECT_DIR$/templates/home_page.html" />
         <option value="$PROJECT_DIR$/static_my_proj/css/food/style.css" />
         <option value="$PROJECT_DIR$/static_my_proj/css/template/style.css" />
-        <option value="$PROJECT_DIR$/ping drop.txt" />
         <option value="$PROJECT_DIR$/templates/base/about.html" />
         <option value="$PROJECT_DIR$/static_my_proj/css/common.css.css" />
         <option value="$PROJECT_DIR$/static_my_proj/css/food/style1.css" />
@@ -135,6 +119,7 @@
         <option value="$PROJECT_DIR$/templates/base/navbar.html" />
         <option value="$PROJECT_DIR$/templates/contact/appointment.html" />
         <option value="$PROJECT_DIR$/templates/footer.html" />
+        <option value="$PROJECT_DIR$/ping drop.txt" />
       </list>
     </option>
   </component>
@@ -470,14 +455,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ping drop.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/base/about.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -624,6 +601,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/templates/footer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="17" column="155" lean-forward="false" selection-start-line="17" selection-start-column="155" selection-end-line="17" selection-end-column="155" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/templates/contact/appointment.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -635,10 +620,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/footer.html">
+    <entry file="file://$PROJECT_DIR$/ping drop.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="17" column="155" lean-forward="false" selection-start-line="17" selection-start-column="155" selection-end-line="17" selection-end-column="155" />
+        <state relative-caret-position="600">
+          <caret line="5444" column="6" lean-forward="false" selection-start-line="5444" selection-start-column="6" selection-end-line="5444" selection-end-column="6" />
           <folding />
         </state>
       </provider>
