@@ -20,7 +20,7 @@ from django.conf.urls.static import static
 from django.conf.urls import url, include
 from django.contrib import admin
 from django.contrib.auth.views import LogoutView
-from django.views.generic import TemplateView
+from django.contrib.auth import views as auth_views
 
 
 from accounts.views import login_page, register_page, guest_register_view
@@ -32,10 +32,10 @@ from .views import (
 
 urlpatterns = [
     url(r'^$', home_page, name=''),
-    url(r'^home$', ProductListView.as_view(), name='list'),
+    url(r'^index$', ProductListView.as_view(), name='list'),
     url(r'^about/$', about_page, name='about'),
     url(r'^contact/$', contact_page, name='contact'),
-    url(r'^login/$', login_page, name='login'),
+    url(r'^login/$', auth_views.login, name='login'),
     url(r'^checkout/address/create/$', checkout_address_create_view, name='checkout_address_create'),
     url(r'^checkout/address/reuse/$', checkout_address_reuse_view, name='checkout_address_reuse'),
     url(r'^register/guest/$', guest_register_view, name='guest_register'),

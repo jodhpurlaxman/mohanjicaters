@@ -1,3 +1,136 @@
+/*-- //footer-top --*/
+.footer-bottom {
+    text-align: center;
+    /*margin: 4em 0 0;*/
+}
+.footer-bottom h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3em;
+    display: inline-block;
+	position:relative;
+}
+.footer-bottom h2 a {
+    text-decoration: none;
+    color: #328643;
+}
+.footer-bottom h2 span {
+    font-size: 12px;
+    display: block;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-family: 'Noto Sans', sans-serif;
+    padding-top: 6px;
+}
+.footer-bottom h2 b {
+    font-size: 10px;
+    background: #CC2127;
+    font-weight: normal;
+    padding: 3px;
+    display: inline-block;
+    line-height: 10px;
+    position: absolute;
+    top: 9px;
+    left: -7px;
+}
+ p.fo-para {
+    font-size: 1em;
+    line-height: 2em;
+    color: #2f2929;
+    padding: 1em 0 3em;
+    width: 70%;
+    margin: 0 auto;
+}
+.fo-grid1 p{
+	 font-size:1em;
+	line-height:2em;
+	color:#333;
+}
+.fo-grid1 p a{
+	text-decoration:none;
+	color:#333;
+}
+.fo-grid1 p a:hover {
+    color: #FAB005;
+}
+.fo-grid1 p  i{
+	margin-right:7px;
+}
+.social-fo  li{
+	list-style-type:none;
+	display:inline-block;
+	margin:0 5px;
+}
+.social-fo li a {
+    width: 35px;
+	height: 35px;
+    display: block;
+    background: #3B5998;
+    border-radius: 100px;
+    color: #fff;
+    line-height: 2.5em;
+}
+.social-fo li a:hover {
+   transform:rotate(-360deg);
+}
+.social-fo li a.twi {
+    background: #4099FF;
+}
+.social-fo li a.pin {
+    background: #CD2830;
+}
+.social-fo li a.dri {
+    background:#E35E90;
+}
+.address {
+    margin-top: 2em;
+}
+/*-- //footer-top --*/
+.footer {
+    background: #fff;
+    /*padding: 5em 0;*/
+}
+.footer-grid h3 {
+    color: #fff;
+    font-size: 1.7em;
+    margin-bottom: 1em;
+}
+.footer-grid p {
+    color: #ABABAB;
+    line-height: 2.2em;
+    font-size: 14px;
+}
+.footer-grid ul li{
+	list-style-type:none;
+	font-size:14px;
+	line-height:2.2em;
+    color: #ABABAB;
+
+}
+.footer-grid ul li a{
+
+    color: #ABABAB;
+}
+.footer-grid ul li a:hover{
+    color:#FAB005;
+}
+
+.copy-right p {
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 4em;
+}
+.copy-right p a {
+    color: #fff;
+}
+.copy-right p a:hover {
+    color: #E21737;
+}
+/*-- //footer --*/
+
+
+
+/* end */
 .link-purchase {
     background: #f17920;
     border-radius: 72px;
@@ -8,7 +141,7 @@
     padding-top: 9px;
     position: fixed;
     right: 35px;
-    text-align: center;
+    text-ali gn: center;
     top: 120px;
     width: 95px;
     z-index: 99999;
