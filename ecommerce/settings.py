@@ -85,7 +85,6 @@ AUTHENTICATION_BACKENDS = (
     'social_core.backends.github.GithubOAuth2',
     'social_core.backends.twitter.TwitterOAuth',
     'social_core.backends.facebook.FacebookOAuth2',
-
     'django.contrib.auth.backends.ModelBackend',
 )
 
@@ -155,5 +154,9 @@ MEDIA_ROOT = os.path.join((BASE_DIR), "static_cdn", "media_root")
 
 SOCIAL_AUTH_GITHUB_KEY = '3b038a702872bc96383b'
 SOCIAL_AUTH_GITHUB_SECRET = '0961f7788bd680225f39c076e11291925e32b226'
+
+SOCIAL_AUTH_LOGIN_ERROR_URL = '/settings/'
+SOCIAL_AUTH_LOGIN_REDIRECT_URL = '/settings/'
+SOCIAL_AUTH_RAISE_EXCEPTIONS = False
 
 

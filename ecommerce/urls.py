@@ -29,6 +29,7 @@ from .views import home_page, about_page, contact_page
 from .views import (
         ProductListView,
         )
+from . import views as core_views
 
 urlpatterns = [
     url(r'^$', home_page, name=''),
@@ -38,6 +39,8 @@ urlpatterns = [
     url(r'^login/$', auth_views.login, name='login'),
     url(r'^logout/$', auth_views.logout, name='logout'),
     url(r'^oauth/', include('social_django.urls', namespace='social')),
+    url(r'^settings/$', core_views.settings, name='settings'),
+    url(r'^settings/password/$', core_views.password, name='password'),
     url(r'^checkout/address/create/$', checkout_address_create_view, name='checkout_address_create'),
     url(r'^checkout/address/reuse/$', checkout_address_reuse_view, name='checkout_address_reuse'),
     url(r'^register/guest/$', guest_register_view, name='guest_register'),

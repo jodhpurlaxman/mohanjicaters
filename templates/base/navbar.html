@@ -10,7 +10,11 @@
             <div class="cell-lg-preffix-2 cell-sm-12 text-md-right cell-lg-3 cell-md-push-3 cell-md-4 cell-login">
               <div class="unit unit-horizontal unit-middle unit-spacing-xs">
                 <div class="unit-left"><span class="icon mdi mdi-login text-middle"></span></div>
+                {% if user.is_authenticated %}
+                <div class="unit-body"><a href="/profile">{{ user.username }}</a></div>
+                {% else %}
                 <div class="unit-body"><a href="login-register.html">Login/Register</a></div>
+                {% endif %}
               </div>
             </div>
           </div>
