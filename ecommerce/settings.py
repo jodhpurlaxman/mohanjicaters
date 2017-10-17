@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     #our apps
+    'social_django',
     'accounts',
     'addresses',
     'billing',
@@ -57,6 +58,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'social_django.middleware.SocialAuthExceptionMiddleware',
 ]
 
 LOGOUT_REDIRECT_URL = '/login/'
@@ -73,10 +75,19 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'social_django.context_processors.backends',  # <--
+                'social_django.context_processors.login_redirect', # <--
             ],
         },
     },
 ]
+AUTHENTICATION_BACKENDS = (
+    'social_core.backends.github.GithubOAuth2',
+    'social_core.backends.twitter.TwitterOAuth',
+    'social_core.backends.facebook.FacebookOAuth2',
+
+    'django.contrib.auth.backends.ModelBackend',
+)
 
 WSGI_APPLICATION = 'ecommerce.wsgi.application'
 
@@ -140,5 +151,9 @@ STATIC_ROOT = os.path.join((BASE_DIR), "static_cdn", "static_root")
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join((BASE_DIR), "static_cdn", "media_root")
 
+
+
+SOCIAL_AUTH_GITHUB_KEY = '3b038a702872bc96383b'
+SOCIAL_AUTH_GITHUB_SECRET = '0961f7788bd680225f39c076e11291925e32b226'
 
 

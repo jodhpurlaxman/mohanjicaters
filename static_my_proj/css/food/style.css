@@ -2121,6 +2121,18 @@ fieldset[disabled] .btn-default.focus {
     border-color: #3aa651;
 }
 
+.btn-second {
+    color: #fff;
+    background-color: #3c1863;
+    border-color: #3c1863;
+}
+
+.open>.btn-second.dropdown-toggle {
+    color: #fff;
+    background-color: #100f0c;;
+    border-color: #3c1863;
+}
+
 .btn-primary:active:hover,
 .btn-primary:active:focus,
 .btn-primary:active.focus,

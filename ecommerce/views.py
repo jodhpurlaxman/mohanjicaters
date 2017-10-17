@@ -2,6 +2,7 @@ from django.contrib.auth import authenticate, login, get_user_model
 from django.http import HttpResponse
 from django.shortcuts import render,redirect
 from django.views.generic import ListView, DetailView
+from django.contrib.auth.decorators import login_required
 
 from .forms import ContactForm
 
@@ -45,6 +46,7 @@ def product_list_view(request):
     }
     return render(request, "home_page1.html", context)
 
+@login_required
 def home_page(request):
     # print(request.session.get("first_name", "Unknown"))
     # request.session['first_name']

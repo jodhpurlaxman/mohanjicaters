@@ -1,12 +1,13 @@
 {% extends 'base.html' %}
 {% block content %}
-        <section class="section-gradient">
+       <section class="section-gradient">
         <div class="shell">
           <div class="range range-xs-center section-115 range-xs-middle section-cover">
             <div class="cell-xs-8 cell-sm-6 cell-md-5 cell-xs-10 cell-lg-4">
               <div class="panel text-center"><span class="icon icon-circle mdi mdi-account-multiple-outline icon-md icon-gray"></span>
                 <div class="offset-top-20"><span class="h7">Login to your account</span><span class="small-1 text-light">Enter your credentials below</span></div>
                 <form data-form-type="contact" method="post" class="text-left form-login offset-top-25">
+                  {% csrf_token %}
                   <div class="form-group"><span class="icon mdi mdi-account-outline icon-xs icon-gray"></span>
                     <label for="login-name" class="form-label rd-input-label">Your Login</label>
                     <input id="login-name" type="text" name="login" data-constraints="@Required" class="form-control form-control-has-validation form-control-last-child"><span class="form-validation"></span>
@@ -15,7 +16,11 @@
                     <label for="login-password" class="form-label rd-input-label">Your Password</label>
                     <input id="login-password" type="password" name="password" data-constraints="@Required" class="form-control form-control-has-validation form-control-last-child"><span class="form-validation"></span>
                   </div>
-                  <button type="submit" class="btn btn-primary btn-icon btn-icon-center">Sign up<span class="icon mdi mdi-arrow-right-bold-circle-outline icon-xs-small"></span></button>
+                  <button type="submit" class="btn btn-primary btn-icon btn-icon-center">Sign in<span class="icon mdi mdi-arrow-right-bold-circle-outline icon-xs-small"></span></button>
+                  <a href="{% url 'social:begin' 'github' %}"><button type="submit" class="btn btn-second btn-icon btn-icon-center">Login with GitHub<span class="icon mdi mdi-arrow-right-bold-circle-outline icon-xs-small"></span></button></a>
+                  <a href="{% url 'social:begin' 'github' %}"><button type="submit" class="btn btn-primary btn-icon btn-icon-center">Login with GitHub<span class="icon mdi mdi-arrow-right-bold-circle-outline icon-xs-small"></span></button></a>
+                  <a href="{% url 'social:begin' 'github' %}"><button type="submit" class="btn btn-second btn-icon btn-icon-center">Login with GitHub<span class="icon mdi mdi-arrow-right-bold-circle-outline icon-xs-small"></span></button></a>
+
                 </form>
                 <div class="text-left offset-top-15"><a href="#" class="small-1 text-picton-blue">Forgot your password?</a>
                   <p class="small-1 text-light"><span>Don’t have an account?</span> <a href="#" class="text-picton-blue">Sign up here</a> <span>.</span> </p>
@@ -26,5 +31,6 @@
         </div>
       </section>
     </main>
+ <a href="{% url 'social:begin' 'github' %}">Login with GitHub</a><br>
 {% endblock content %}
 {% block footer %}{% include 'footer.html' %}{% endblock %}
