@@ -1,10 +1,40 @@
 {% extends "base.html" %}
-
 {% block content %}
-    <h1>Register</h1>
-    <form method='POST'> {% csrf_token %}
-      {{ form }}
-      <button type='submit' class='btn btn-default'>Submit</button>
-    </form>
-
+<section class="section-gradient">
+        <div class="shell">
+          <div class="range range-xs-center section-115 range-xs-middle section-cover">
+            <div class="cell-xs-8 cell-sm-6 cell-md-5 cell-xs-10 cell-lg-4">
+              <div class="panel text-center"><span class="icon icon-circle mdi mdi-account-multiple-outline icon-md icon-gray"></span>
+                <div class="offset-top-20"><span class="h7">Create your account</span><span class="small-1 text-light">All fields are required</span></div>
+                <form data-form-type="contact" method="post"  class="text-left form-login offset-top-25" >
+                    {% csrf_token %} 
+                  <div class="form-group"><span class="icon mdi mdi-account-outline icon-xs icon-gray"></span>
+                    <label for="register-name" class="form-label">User Name</label>
+                    <input id="register-name" type="text" name="login" data-constraints="@Required" class="form-control">
+                  </div>
+                  <div class="form-group"><span class="icon mdi mdi-email-outline icon-xs icon-gray"></span>
+                    <label for="register-email" class="form-label">E-Mail</label>
+                    <input id="register-email" type="email" name="email" data-constraints="@Required" class="form-control">
+                  </div>
+                  <div class="form-group"><span class="icon mdi mdi-lock-open-outline icon-xs icon-gray"></span>
+                    <label for="register-password" class="form-label">Password</label>
+                    <input id="register-password" type="password" name="password" data-constraints="@Required" class="form-control">
+                  </div>
+                  <div class="form-group"><span class="icon mdi mdi-lock-open-outline icon-xs icon-gray"></span>
+                    <label for="register-password-repeat" class="form-label">Repeat a password</label>
+                    <input id="register-password-repeat" type="password" name="password" data-constraints="@Required" class="form-control">
+                  </div>
+                  <div class="form-group">
+                    <label class="checkbox-inline checkbox-register">
+                      <input name="input-group-radio" value="checkbox-2" type="checkbox">
+                      <span class="small-1 text-light"> I agree with the<a href="#" class="text-picton-blue"> Terms of use</a>.</span> </label>
+                  </div>
+                  <button type="submit" class="btn btn-primary btn-icon offset-top-15 btn-icon-center">Sign up<span class="icon mdi mdi-arrow-right-bold-circle-outline icon-xs-small"></span></button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 {% endblock %}
+{% block footer %}{% include 'footer.html' %}{% endblock %}

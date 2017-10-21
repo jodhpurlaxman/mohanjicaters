@@ -53,7 +53,7 @@ def product_list_view(request):
     }
     return render(request, "home_page1.html", context)
 
-@login_required
+
 def home_page(request):
     # print(request.session.get("first_name", "Unknown"))
     # request.session['first_name']
@@ -136,5 +136,7 @@ def password(request):
     else:
         form = PasswordForm(request.user)
     return render(request, 'password.html', {'form': form})
+
+
 
 

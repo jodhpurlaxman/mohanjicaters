@@ -2,6 +2,7 @@ from django.contrib.auth import authenticate, login, get_user_model
 from django.http import HttpResponse
 from django.shortcuts import render,redirect
 from django.utils.http import is_safe_url
+from django.contrib.auth.decorators import login_required
 
 
 from .forms import LoginForm, RegisterForm, GuestForm
@@ -70,3 +71,12 @@ def register_page(request):
         print(new_user)
 
     return render(request, "accounts/register.html", context)
+
+
+
+def profile_page(request):
+    return render(request, 'accounts/profile.html', )
+
+
+def register_page(request):
+    return render(request, 'accounts/register.html', )
