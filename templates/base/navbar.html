@@ -27,7 +27,7 @@
           </div>
           <div class="rd-navbar-nav-wrap">
             <ul class="rd-navbar-nav">
-              <li class="active"><a href="/index">Home</a></li>
+              <li class="active"><a href="{{ default_domain }}/index">Home</a></li>
               <!--<li><a href="#">Shop</a>
                 <ul class="rd-navbar-dropdown">
                   <li><a href="shop-cart.html">Shopping Cart</a></li>
@@ -36,15 +36,15 @@
                   <li><a href="shop-single-products.html">Single Product</a></li>
                 </ul>
               </li>&ndash;&gt;-->
-              <li><a href="/about">Products</a></li>
-              <li><a href="/about">Services</a></li>
-              <li><a href="/about">About Us</a></li>
+              <li><a href="{{ default_domain }}/products">Products</a></li>
+              <li><a href="{{ default_domain }}/about">Services</a></li>
+              <li><a href="{{ default_domain }}/about">About Us</a></li>
                 <ul class="rd-navbar-megamenu">
                   <li>
                     <p>Pages 1</p>
                     <ul>
-                      <li><a href="/about">About Us</a></li>
-                      <li><a href="/contact">Contact Us</a></li>
+                      <li><a href="{{ default_domain }}/about">About Us</a></li>
+                      <li><a href="{{ default_domain }}/contact">Contact Us</a></li>
                       <!--<li><a href="appointment.html">Make an Appointment</a></li>
                       <li><a href="maintenance.html">Maintenance</a></li>
                       <li><a href="our-farmers.html">Our Team</a></li>
@@ -59,8 +59,8 @@
                     <ul>
                      <!-- <li><a href="faq.html">FAQ</a></li>
                       <li><a href="coming-soon.html">Coming Soon</a></li>-->
-                      <li><a href="/login">Login Page</a></li>
-                      <li><a href="/register">Register Page</a></li>
+                      <li><a href="{{ default_domain }}/login">Login Page</a></li>
+                      <li><a href="{{ default_domain }}/register">Register Page</a></li>
                       <!--<li><a href="testimonials.html">Clients</a></li>
                       <li><a href="search-results.html">Search results</a></li>
                       <li><a href="site-map.html">Sitemap</a></li>
@@ -87,7 +87,7 @@
                   <li><a href="full-width-grid.html">Full Width Gallery</a></li>
                 </ul>
               </li>-->
-              <li><a href="/contact">Contact Us</a></li>
+              <li><a href="{{ default_domain }}/contact">Contact Us</a></li>
               <li class="rd-navbar-search">
                 <button data-rd-navbar-toggle=".rd-search" class="rd-navbar-search-toggle icon rd-search-form-submit icon-xs fl-crisp-icons-search69 icon-gray"></button>
                 <form action="search-results.html" method="GET" data-search-live="rd-search-results-live" class="rd-search">
@@ -99,9 +99,10 @@
                   <button type="submit" class="icon rd-search-form-submit icon-xs fl-crisp-icons-search69 icon-gray"></button>
                 </form>
               </li>
-              <li class="rd-navbar-cart-wrap"><span class="rd-navbar-cart"><a href="shop-cart.html" class="icon icon-sm icon-gray"><span class="icon icon-gray fl-outicons-shopping-cart13"></span><span class="text-bold">$0.00</span></a></span></li>
+              <li class="rd-navbar-cart-wrap"><span class="rd-navbar-cart"><a href="{{ default_domain }}/shop-cart.html" class="icon icon-sm icon-gray"><span class="icon icon-gray fl-outicons-shopping-cart13"></span><span class="text-bold">$0.00</span></a></span></li>
             </ul>
           </div>
         </div>
       </nav>
     </div>
+

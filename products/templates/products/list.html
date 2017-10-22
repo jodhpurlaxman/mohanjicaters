@@ -1,23 +1,13 @@
-{% extends "base.html" %}
-{% load static %}
-{% block contact %}
-            <section id="offers" class="offers">
-                <div class="container text-center">
+<div>
+  <div data-items="1" data-sm-items="2" data-md-items="4" data-lg-items="4" data-stage-padding="15" data-dots-each="1" data-loop="true" data-dots="true" data-margin="30" class="owl-carousel owl-carousel-custom">
+      {% block content %}
+        {% for obj in object_list %}
+            {% include 'products/snippets/card.html' with instance=obj %}
+        {% endfor %}
+    {% endblock %}
+  </div>
+</div>
 
-                    <header>
-                        <h2>Special Offers</h2>
-                        <h3>Don't miss our offers</h3>
-                    </header>
 
-                    <div class="row">
-                        {% block content %}
-                            {% for obj in object_list %}
-                                {% include 'products/snippets/card.html' with instance=obj %}
-                            {% endfor %}
-                        {% endblock %}
-                    </div>
-                </div>
-            </section>
-{% endblock %}
 
 

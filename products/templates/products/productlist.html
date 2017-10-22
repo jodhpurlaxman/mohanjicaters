@@ -1,23 +1,120 @@
-{% extends "base.html" %}
-{% load static %}
+{% extends 'base.html' %}
+
 {% block dishes %}
-            <section id="offers" class="offers">
-                <div class="container text-center">
+<section class="section-50 breadcrumbs-wrap">
+  <div class="shell text-center">
+    <h2>Shop Grid View</h2>
+    <ul class="breadcrumbs-custom">
+      <li><a href="index.html">Home</a><span>/</span></li>
+      <li><a href="#">Shop </a><span>/</span></li>
+      <li class="active">Shop Grid View </li>
+    </ul>
+  </div>
+</section>
+<section class="section-50 section-sm-75 section-md-115">
+  <div class="shell">
+    <div class="range">
+      <div class="cell-md-9">
+        <div class="toolbar-shop">
+          <div class="toolbar-shop-sorter"><a href="shop-grid-view.html" class="toolbar-shop-icon active"><span class="icon-sm mdi mdi-view-module"></span></a><a href="shop-list-view.html" class="toolbar-shop-icon"><span class="icon-sm mdi mdi-view-list"></span></a></div>
+          <div class="toolbar-shop-pager"><span class="toolbar-shop-current text-mantis">1-6 of 15</span>
+            <div class="form-group">
+              <label class="veil reveal-xs-inline-block">Show:</label>
+              <select data-placeholder="Select an option" data-minimum-results-for-search="Infinity" class="form-control select-filter toolbar-shop-pager-select select2-hidden-accessible" tabindex="-1" aria-hidden="true">
+                <option>6</option>
+                <option>12</option>
+                <option>18</option>
+                <option>24</option>
+              </select>
 
-                    <header>
-                        <h2>Special Offers</h2>
-                        <h3>Don't miss our offers</h3>
-                    </header>
-
-                    <div class="row">
-                        {% block content %}
-                            {% for obj in object_list %}
-                                {% include 'products/snippets/card.html' with instance=obj %}
-                            {% endfor %}
-                        {% endblock %}
-                    </div>
+            </div>
+          </div>
+        </div>
+        <div class="range">
+            {% block content %}
+                    {% for obj in object_list %}
+            {% include 'products/snippets/card.html' with instance=obj %}
+                {% endfor %}
+            {% endblock %}
+        </div>
+        <ul class="pagination-classic offset-top-55 pagination-classic-center offset-md-top--50 pagination-classic-1 pagination-classic-mod-1">
+          <li>
+            <ul>
+              <li class="first"><span class="mdi-chevron-double-left mdi iocn"></span></li>
+              <li class="active"><span>1</span></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li><a href="#">4</a></li>
+              <li class="last"><a href="#" class="mdi-chevron-double-right mdi iocn"></a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="cell-md-3 offset-lg-top--10 offset-top-70 offset-md-top-0">
+        <aside class="inset-lg-left-20">
+          <div class="range text-left">
+            <div class="cell-md-12 cell-sm-4"><span class="text-uppercase big-3 text-sbold">categories</span>
+              <div class="text-subline"></div>
+              <div class="input-group-custom offset-top-20">
+                <div class="form-group">
+                  <label class="checkbox-inline checkbox-register">
+                    <input name="input-group-radio" value="checkbox-2" type="checkbox" class="checkbox-custom"><span class="checkbox-custom-dummy"></span>
+                    <span class="small-2"><span>Food</span> <span class="text-light">(37)</span></span> </label>
                 </div>
-            </section>
+                <div class="form-group">
+                  <label class="checkbox-inline checkbox-register">
+                    <input name="input-group-radio" value="checkbox-2" type="checkbox" class="checkbox-custom"><span class="checkbox-custom-dummy"></span>
+                    <span class="small-2"><span>Vegetables</span> <span class="text-light">(21)</span></span> </label>
+                </div>
+                <div class="form-group">
+                  <label class="checkbox-inline checkbox-register">
+                    <input name="input-group-radio" value="checkbox-2" type="checkbox" class="checkbox-custom"><span class="checkbox-custom-dummy"></span>
+                    <span class="small-2"><span>Fruits</span> <span class="text-light">(12)</span></span> </label>
+                </div>
+                <div class="form-group">
+                  <label class="checkbox-inline checkbox-register">
+                    <input name="input-group-radio" value="checkbox-2" type="checkbox" class="checkbox-custom"><span class="checkbox-custom-dummy"></span>
+                    <span class="small-2"><span>Bread</span> <span class="text-light">(7)</span></span> </label>
+                </div>
+                <div class="form-group">
+                  <label class="checkbox-inline checkbox-register">
+                    <input name="input-group-radio" value="checkbox-2" type="checkbox" class="checkbox-custom"><span class="checkbox-custom-dummy"></span>
+                    <span class="small-2"><span>Meat</span> <span class="text-light">(15)</span></span> </label>
+                </div>
+              </div>
+            </div>
+            <div class="cell-md-12 offset-md-top-50 cell-sm-4"><span class="text-uppercase big-3 text-sbold">brands</span>
+              <div class="text-subline"></div>
+              <div class="input-group-custom offset-top-20">
+                <div class="form-group">
+                  <label class="checkbox-inline checkbox-register">
+                    <input name="input-group-radio" value="checkbox-2" type="checkbox" class="checkbox-custom"><span class="checkbox-custom-dummy"></span>
+                    <span class="small-2"><span>Organic Farm</span> <span class="text-light">(4)</span></span> </label>
+                </div>
+                <div class="form-group">
+                  <label class="checkbox-inline checkbox-register">
+                    <input name="input-group-radio" value="checkbox-2" type="checkbox" class="checkbox-custom"><span class="checkbox-custom-dummy"></span>
+                    <span class="small-2"><span>Fresh Market</span> <span class="text-light">(21)</span></span> </label>
+                </div>
+                <div class="form-group">
+                  <label class="checkbox-inline checkbox-register">
+                    <input name="input-group-radio" value="checkbox-2" type="checkbox" class="checkbox-custom"><span class="checkbox-custom-dummy"></span>
+                    <span class="small-2"><span>Eco Food</span> <span class="text-light">(12)</span></span> </label>
+                </div>
+              </div>
+            </div>
+            <div class="cell-md-12 offset-md-top-50 cell-sm-4"><span class="text-uppercase big-3 text-sbold">Price</span>
+              <div class="text-subline"></div>
+              <div data-min="5" data-max="150" data-start="[34, 113]" data-step="1" data-tooltip="true" data-min-diff="15" data-input=".rd-range-input-value-1" data-input-2=".rd-range-input-value-2" class="rd-range hasTooltip"><div class="rd-range__wrap"><div class="rd-range__pointer rd-range__pointer-1" style="left: 47.5862%;"><div class="rd-range__pointer-tooltip">74</div></div><div class="rd-range__pointer rd-range__pointer-2" style="left: 74%;"><div class="rd-range__pointer-tooltip">113</div></div><div class="rd-range__line" style="left: 47.5862%; width: 26.4138%;"></div> </div></div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
 {% endblock %}
+{% block footer %}{% include 'footer.html' %}{% endblock %}
 
 

@@ -1,5 +1,567 @@
-{{ object.title }} <br/>
-{{ object.description }} <br/>
-{% if object.image %}
-    <img src='{{ object.image.url }}' class='img-fluid' />
-{% endif %}
+<div class="page text-center text-md-left">
+        <header class="page-head">
+          <div class="rd-navbar-wrap" style="height: 128px;">
+      <nav class="rd-navbar rd-navbar-original rd-navbar-static rd-navbar--is-stuck" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-md-layout="rd-navbar-static" data-lg-layout="rd-navbar-static" data-lg-device-layout="rd-navbar-static" data-sm-stick-up-offset="50px" data-lg-stick-up-offset="107px" data-stick-up-clone="false">
+        <div class="shell rd-navbar-outer toggle-original-elements">
+          <div class="range range-sm-middle range-sm-justify">
+            <div class="cell-lg-preffix-2 cell-sm-12 text-center cell-md-2 cell-md-push-2">
+              <div class="rd-navbar-brand"><a href="index.html" class="brand-name"><img src="../static/img/logo.png" alt=""></a></div>
+            </div>
+            <div class="cell-sm-12 text-md-left cell-lg-3 cell-md-4 cell-md-push-1"><span class="icon fl-bigmug-line-big104 icon-gray-lighter icon-sm"></span><a href="#" class="text-middle text-gray preffix-left-10">Station Road Ahemdabad</a></div>
+            <div class="cell-lg-preffix-2 cell-sm-12 text-md-right cell-lg-3 cell-md-push-3 cell-md-4"><span class="icon fl-bigmug-line-nine16 icon-gray-lighter icon-xs"></span><span class="text-middle text-gray preffix-left-10">Week Days: 08:00am–10:00pm</span></div>
+            <div class="cell-lg-preffix-2 cell-sm-12 text-md-right cell-lg-3 cell-md-push-3 cell-md-4 cell-login">
+              <div class="unit unit-horizontal unit-middle unit-spacing-xs">
+                <div class="unit-left"><span class="icon mdi mdi-login text-middle"></span></div>
+
+                <div class="unit-body"><a href="login-register.html">Login/Register</a></div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="rd-navbar-inner">
+          <div class="rd-navbar-panel">
+            <button data-rd-navbar-toggle=".rd-navbar-nav-wrap" class="rd-navbar-toggle toggle-original"><span></span></button>
+            <button data-rd-navbar-toggle=".rd-navbar-outer" class="rd-navbar-collapse-toggle toggle-original"><span></span></button>
+            <div class="rd-navbar-brand"><a href="index.html" class="brand-name"><span>MohanjiCaters</span></a></div>
+          </div>
+          <div class="rd-navbar-nav-wrap toggle-original-elements">
+            <ul class="rd-navbar-nav rd-navbar--has-megamenu">
+              <li class="active"><a href="">Home</a></li>
+              <!--<li><a href="#">Shop</a>
+                <ul class="rd-navbar-dropdown">
+                  <li><a href="shop-cart.html">Shopping Cart</a></li>
+                  <li><a href="shop-grid-view.html">Shop Grid View</a></li>
+                  <li><a href="shop-list-view.html">Shop List View</a></li>
+                  <li><a href="shop-single-products.html">Single Product</a></li>
+                </ul>
+              </li>&ndash;&gt;-->
+              <li><a href="/products">Products</a></li>
+              <li><a href="/about">Services</a></li>
+              <li><a href="/about">About Us</a></li>
+                <ul class="rd-navbar-megamenu rd-navbar-open-right">
+                  <li>
+                    <p>Pages 1</p>
+                    <ul>
+                      <li><a href="/about">About Us</a></li>
+                      <li><a href="/contact">Contact Us</a></li>
+                      <!--<li><a href="appointment.html">Make an Appointment</a></li>
+                      <li><a href="maintenance.html">Maintenance</a></li>
+                      <li><a href="our-farmers.html">Our Team</a></li>
+                      <li><a href="team-members.html">Team Member Profile</a></li>
+                      <li><a href="services.html">Services</a></li>
+                      <li><a href="single-services.html">Single Service</a></li>
+                      <li><a href="careers.html">Careers</a></li>-->
+                    </ul>
+                  </li>
+                  <li>
+                    <p>Pages 2</p>
+                    <ul>
+                     <!-- <li><a href="faq.html">FAQ</a></li>
+                      <li><a href="coming-soon.html">Coming Soon</a></li>-->
+                      <li><a href="/login">Login Page</a></li>
+                      <li><a href="/register">Register Page</a></li>
+                      <!--<li><a href="testimonials.html">Clients</a></li>
+                      <li><a href="search-results.html">Search results</a></li>
+                      <li><a href="site-map.html">Sitemap</a></li>
+                      <li><a href="404.html">404 Page</a></li>
+                      <li><a href="503.html">503 Page</a></li>-->
+                    </ul>
+                  </li>
+                </ul>
+
+              <!--<li><a href="#">blog</a>
+                <ul class="rd-navbar-dropdown">
+                  <li><a href="grid-blog.html">Grid Blog</a></li>
+                  <li><a href="classic-blog.html">Classic Blog</a></li>
+                  <li><a href="masonry-blog.html">Masonry Blog</a></li>
+                  <li><a href="modern-blog.html">Modern Blog</a></li>
+                  <li><a href="classic-single-blog.html">Single Blog Post</a></li>
+                </ul>
+              </li>-->
+              <!--<li><a href="#">Gallery</a>
+                <ul class="rd-navbar-dropdown">
+                  <li><a href="gallery.html">Grid Gallery</a></li>
+                  <li><a href="masonry-gallery.html">Masonry Gallery</a></li>
+                  <li><a href="cobles-gallery.html">Cobbles Gallery</a></li>
+                  <li><a href="full-width-grid.html">Full Width Gallery</a></li>
+                </ul>
+              </li>-->
+              <li><a href="/contact">Contact Us</a></li>
+              <li class="rd-navbar-search">
+                <button data-rd-navbar-toggle=".rd-search" class="rd-navbar-search-toggle icon rd-search-form-submit icon-xs fl-crisp-icons-search69 icon-gray toggle-original"></button>
+                <form action="search-results.html" method="GET" data-search-live="rd-search-results-live" class="rd-search toggle-original-elements">
+                  <div class="form-group">
+                    <label for="rd-search-form-input" class="form-label rd-input-label">Search...</label>
+                    <input id="rd-search-form-input" type="text" name="s" autocomplete="off" class="form-control">
+                  </div>
+                  <div id="rd-search-results-live" class="rd-search-results-live"></div>
+                  <button type="submit" class="icon rd-search-form-submit icon-xs fl-crisp-icons-search69 icon-gray"></button>
+                </form>
+              </li>
+              <li class="rd-navbar-cart-wrap"><span class="rd-navbar-cart"><a href="/shop-cart.html" class="icon icon-sm icon-gray"><span class="icon icon-gray fl-outicons-shopping-cart13"></span><span class="text-bold">$0.00</span></a></span></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+
+        </header>
+        <main class="page-content">
+
+
+<section class="section-50 breadcrumbs-wrap">
+  <div class="shell text-center">
+    <h2>Shop Grid View</h2>
+    <ul class="breadcrumbs-custom">
+      <li><a href="index.html">Home</a><span>/</span></li>
+      <li><a href="#">Shop </a><span>/</span></li>
+      <li class="active">Shop Grid View </li>
+    </ul>
+  </div>
+</section>
+<section class="section-50 section-sm-75 section-md-115">
+  <div class="shell">
+    <div class="range">
+      <div class="cell-md-9">
+        <div class="toolbar-shop">
+          <div class="toolbar-shop-sorter"><a href="shop-grid-view.html" class="toolbar-shop-icon active"><span class="icon-sm mdi mdi-view-module"></span></a><a href="shop-list-view.html" class="toolbar-shop-icon"><span class="icon-sm mdi mdi-view-list"></span></a></div>
+          <div class="toolbar-shop-pager"><span class="toolbar-shop-current text-mantis">1-6 of 15</span>
+            <div class="form-group">
+              <label class="veil reveal-xs-inline-block">Show:</label>
+              <select data-placeholder="Select an option" data-minimum-results-for-search="Infinity" class="form-control select-filter toolbar-shop-pager-select select2-hidden-accessible" tabindex="-1" aria-hidden="true">
+                <option>6</option>
+                <option>12</option>
+                <option>18</option>
+                <option>24</option>
+              </select><span class="select2 select2-container select2-container--bootstrap" dir="ltr" style="width: 1px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="-1" aria-labelledby="select2-fodq-container"><span class="select2-selection__rendered" id="select2-fodq-container" title="6">6</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span><span class="select2 select2-container select2-container--bootstrap select2-container--below" dir="ltr" style="width: 228px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-gkyr-container"><span class="select2-selection__rendered" id="select2-gkyr-container" title="6">6</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+            </div>
+          </div>
+        </div>
+        <div class="range">
+
+
+            <div class="cell-sm-6 cell-lg-4">
+  <div class="product-featured text-center">
+
+    <div class="product-featured-images"><img src="/media/products/3537762751/3537762751.jpg" alt="" width="270" height="204" class="img-responsive"> </div>
+
+    <div class="product-featured-rating"><span class="icon material-icons-grade icon-saffron icon-xs-small"></span><span class="icon material-icons-grade icon-saffron icon-xs-small"></span><span class="icon material-icons-grade icon-saffron icon-xs-small"></span><span class="icon material-icons-grade icon-saffron icon-xs-small"></span><span class="icon material-icons-star_half icon-saffron icon-xs-small"></span></div>
+    <div class="product-featured-title">
+      <div class="h7 text-sbold"><a href="shop-single-products.html" class="text-chateau-green">American Nuts</a></div>
+    </div>
+    <div class="product-featured-price"><span class="product-price-new h6 text-sbold">1080.00INR</span><span class="product-price-old h7 text-light text-regular">$80.00</span></div>
+    <div class="product-featured-block-hover"><a href="shop-cart.html" class="btn btn-icon btn-icon-left btn-success"><span class="icon fl-outicons-shopping-cart13"></span>Add to cart</a></div>
+  </div>
+</div>
+
+            <div class="cell-sm-6 cell-lg-4">
+  <div class="product-featured text-center">
+
+    <div class="product-featured-images"><img src="/media/products/2109372338/2109372338.jpg" alt="" width="270" height="204" class="img-responsive"> </div>
+
+    <div class="product-featured-rating"><span class="icon material-icons-grade icon-saffron icon-xs-small"></span><span class="icon material-icons-grade icon-saffron icon-xs-small"></span><span class="icon material-icons-grade icon-saffron icon-xs-small"></span><span class="icon material-icons-grade icon-saffron icon-xs-small"></span><span class="icon material-icons-star_half icon-saffron icon-xs-small"></span></div>
+    <div class="product-featured-title">
+      <div class="h7 text-sbold"><a href="shop-single-products.html" class="text-chateau-green">Anguri Tin</a></div>
+    </div>
+    <div class="product-featured-price"><span class="product-price-new h6 text-sbold">200.00INR</span><span class="product-price-old h7 text-light text-regular">$80.00</span></div>
+    <div class="product-featured-block-hover"><a href="shop-cart.html" class="btn btn-icon btn-icon-left btn-success"><span class="icon fl-outicons-shopping-cart13"></span>Add to cart</a></div>
+  </div>
+</div>
+
+            <div class="cell-sm-6 cell-lg-4">
+  <div class="product-featured text-center">
+
+    <div class="product-featured-images"><img src="/media/products/327419445/327419445.jpg" alt="" width="270" height="204" class="img-responsive"> </div>
+
+    <div class="product-featured-rating"><span class="icon material-icons-grade icon-saffron icon-xs-small"></span><span class="icon material-icons-grade icon-saffron icon-xs-small"></span><span class="icon material-icons-grade icon-saffron icon-xs-small"></span><span class="icon material-icons-grade icon-saffron icon-xs-small"></span><span class="icon material-icons-star_half icon-saffron icon-xs-small"></span></div>
+    <div class="product-featured-title">
+      <div class="h7 text-sbold"><a href="shop-single-products.html" class="text-chateau-green">Anjir Dryfruit Cake</a></div>
+    </div>
+    <div class="product-featured-price"><span class="product-price-new h6 text-sbold">940.00INR</span><span class="product-price-old h7 text-light text-regular">$80.00</span></div>
+    <div class="product-featured-block-hover"><a href="shop-cart.html" class="btn btn-icon btn-icon-left btn-success"><span class="icon fl-outicons-shopping-cart13"></span>Add to cart</a></div>
+  </div>
+</div>
+
+            <div class="cell-sm-6 cell-lg-4">
+  <div class="product-featured text-center">
+
+    <div class="product-featured-images"><img src="/media/products/1457060931/1457060931.jpg" alt="" width="270" height="204" class="img-responsive"> </div>
+
+    <div class="product-featured-rating"><span class="icon material-icons-grade icon-saffron icon-xs-small"></span><span class="icon material-icons-grade icon-saffron icon-xs-small"></span><span class="icon material-icons-grade icon-saffron icon-xs-small"></span><span class="icon material-icons-grade icon-saffron icon-xs-small"></span><span class="icon material-icons-star_half icon-saffron icon-xs-small"></span></div>
+    <div class="product-featured-title">
+      <div class="h7 text-sbold"><a href="shop-single-products.html" class="text-chateau-green">Anjir Barfi</a></div>
+    </div>
+    <div class="product-featured-price"><span class="product-price-new h6 text-sbold">600.00INR</span><span class="product-price-old h7 text-light text-regular">$80.00</span></div>
+    <div class="product-featured-block-hover"><a href="shop-cart.html" class="btn btn-icon btn-icon-left btn-success"><span class="icon fl-outicons-shopping-cart13"></span>Add to cart</a></div>
+  </div>
+</div>
+
+            <div class="cell-sm-6 cell-lg-4">
+  <div class="product-featured text-center">
+
+    <div class="product-featured-images"><img src="/media/products/3169776649/3169776649.jpg" alt="" width="270" height="204" class="img-responsive"> </div>
+
+    <div class="product-featured-rating"><span class="icon material-icons-grade icon-saffron icon-xs-small"></span><span class="icon material-icons-grade icon-saffron icon-xs-small"></span><span class="icon material-icons-grade icon-saffron icon-xs-small"></span><span class="icon material-icons-grade icon-saffron icon-xs-small"></span><span class="icon material-icons-star_half icon-saffron icon-xs-small"></span></div>
+    <div class="product-featured-title">
+      <div class="h7 text-sbold"><a href="shop-single-products.html" class="text-chateau-green">Akhrot Qube</a></div>
+    </div>
+    <div class="product-featured-price"><span class="product-price-new h6 text-sbold">800.00INR</span><span class="product-price-old h7 text-light text-regular">$80.00</span></div>
+    <div class="product-featured-block-hover"><a href="shop-cart.html" class="btn btn-icon btn-icon-left btn-success"><span class="icon fl-outicons-shopping-cart13"></span>Add to cart</a></div>
+  </div>
+</div>
+
+            <div class="cell-sm-6 cell-lg-4">
+  <div class="product-featured text-center">
+
+    <div class="product-featured-images"><img src="/media/products/2373488431/2373488431.jpg" alt="" width="270" height="204" class="img-responsive"> </div>
+
+    <div class="product-featured-rating"><span class="icon material-icons-grade icon-saffron icon-xs-small"></span><span class="icon material-icons-grade icon-saffron icon-xs-small"></span><span class="icon material-icons-grade icon-saffron icon-xs-small"></span><span class="icon material-icons-grade icon-saffron icon-xs-small"></span><span class="icon material-icons-star_half icon-saffron icon-xs-small"></span></div>
+    <div class="product-featured-title">
+      <div class="h7 text-sbold"><a href="shop-single-products.html" class="text-chateau-green">Anjir Dryfruit Katri</a></div>
+    </div>
+    <div class="product-featured-price"><span class="product-price-new h6 text-sbold">850.00INR</span><span class="product-price-old h7 text-light text-regular">$80.00</span></div>
+    <div class="product-featured-block-hover"><a href="shop-cart.html" class="btn btn-icon btn-icon-left btn-success"><span class="icon fl-outicons-shopping-cart13"></span>Add to cart</a></div>
+  </div>
+</div>
+
+
+        </div>
+        <ul class="pagination-classic offset-top-55 pagination-classic-center offset-md-top--50 pagination-classic-1 pagination-classic-mod-1">
+          <li>
+            <ul>
+              <li class="first"><span class="mdi-chevron-double-left mdi iocn"></span></li>
+              <li class="active"><span>1</span></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li><a href="#">4</a></li>
+              <li class="last"><a href="#" class="mdi-chevron-double-right mdi iocn"></a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="cell-md-3 offset-lg-top--10 offset-top-70 offset-md-top-0">
+        <aside class="inset-lg-left-20">
+          <div class="range text-left">
+            <div class="cell-md-12 cell-sm-4"><span class="text-uppercase big-3 text-sbold">categories</span>
+              <div class="text-subline"></div>
+              <div class="input-group-custom offset-top-20">
+                <div class="form-group">
+                  <label class="checkbox-inline checkbox-register">
+                    <input name="input-group-radio" value="checkbox-2" type="checkbox" class="checkbox-custom"><span class="checkbox-custom-dummy"></span><span class="checkbox-custom-dummy"></span>
+                    <span class="small-2"><span>Food</span> <span class="text-light">(37)</span></span> </label>
+                </div>
+                <div class="form-group">
+                  <label class="checkbox-inline checkbox-register">
+                    <input name="input-group-radio" value="checkbox-2" type="checkbox" class="checkbox-custom"><span class="checkbox-custom-dummy"></span><span class="checkbox-custom-dummy"></span>
+                    <span class="small-2"><span>Vegetables</span> <span class="text-light">(21)</span></span> </label>
+                </div>
+                <div class="form-group">
+                  <label class="checkbox-inline checkbox-register">
+                    <input name="input-group-radio" value="checkbox-2" type="checkbox" class="checkbox-custom"><span class="checkbox-custom-dummy"></span><span class="checkbox-custom-dummy"></span>
+                    <span class="small-2"><span>Fruits</span> <span class="text-light">(12)</span></span> </label>
+                </div>
+                <div class="form-group">
+                  <label class="checkbox-inline checkbox-register">
+                    <input name="input-group-radio" value="checkbox-2" type="checkbox" class="checkbox-custom"><span class="checkbox-custom-dummy"></span><span class="checkbox-custom-dummy"></span>
+                    <span class="small-2"><span>Bread</span> <span class="text-light">(7)</span></span> </label>
+                </div>
+                <div class="form-group">
+                  <label class="checkbox-inline checkbox-register">
+                    <input name="input-group-radio" value="checkbox-2" type="checkbox" class="checkbox-custom"><span class="checkbox-custom-dummy"></span><span class="checkbox-custom-dummy"></span>
+                    <span class="small-2"><span>Meat</span> <span class="text-light">(15)</span></span> </label>
+                </div>
+              </div>
+            </div>
+            <div class="cell-md-12 offset-md-top-50 cell-sm-4"><span class="text-uppercase big-3 text-sbold">brands</span>
+              <div class="text-subline"></div>
+              <div class="input-group-custom offset-top-20">
+                <div class="form-group">
+                  <label class="checkbox-inline checkbox-register">
+                    <input name="input-group-radio" value="checkbox-2" type="checkbox" class="checkbox-custom"><span class="checkbox-custom-dummy"></span><span class="checkbox-custom-dummy"></span>
+                    <span class="small-2"><span>Organic Farm</span> <span class="text-light">(4)</span></span> </label>
+                </div>
+                <div class="form-group">
+                  <label class="checkbox-inline checkbox-register">
+                    <input name="input-group-radio" value="checkbox-2" type="checkbox" class="checkbox-custom"><span class="checkbox-custom-dummy"></span><span class="checkbox-custom-dummy"></span>
+                    <span class="small-2"><span>Fresh Market</span> <span class="text-light">(21)</span></span> </label>
+                </div>
+                <div class="form-group">
+                  <label class="checkbox-inline checkbox-register">
+                    <input name="input-group-radio" value="checkbox-2" type="checkbox" class="checkbox-custom"><span class="checkbox-custom-dummy"></span><span class="checkbox-custom-dummy"></span>
+                    <span class="small-2"><span>Eco Food</span> <span class="text-light">(12)</span></span> </label>
+                </div>
+              </div>
+            </div>
+            <div class="cell-md-12 offset-md-top-50 cell-sm-4"><span class="text-uppercase big-3 text-sbold">Price</span>
+              <div class="text-subline"></div>
+              <div data-min="5" data-max="150" data-start="[34, 113]" data-step="1" data-tooltip="true" data-min-diff="15" data-input=".rd-range-input-value-1" data-input-2=".rd-range-input-value-2" class="rd-range hasTooltip"><div class="rd-range__wrap"><div class="rd-range__pointer rd-range__pointer-1" style="left: 20%;"><div class="rd-range__pointer-tooltip">34</div></div><div class="rd-range__pointer rd-range__pointer-2" style="left: 74%;"><div class="rd-range__pointer-tooltip">113</div></div><div class="rd-range__line" style="left: 20%; width: 54%;"></div> </div></div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+            <div class="cell-sm-6 cell-lg-4">
+  <div class="product-featured text-center">
+
+    <div class="product-featured-images"><img src="/media/products/3537762751/3537762751.jpg" alt="" width="270" height="204" class="img-responsive"> </div>
+
+    <div class="product-featured-rating"><span class="icon material-icons-grade icon-saffron icon-xs-small"></span><span class="icon material-icons-grade icon-saffron icon-xs-small"></span><span class="icon material-icons-grade icon-saffron icon-xs-small"></span><span class="icon material-icons-grade icon-saffron icon-xs-small"></span><span class="icon material-icons-star_half icon-saffron icon-xs-small"></span></div>
+    <div class="product-featured-title">
+      <div class="h7 text-sbold"><a href="shop-single-products.html" class="text-chateau-green">American Nuts</a></div>
+    </div>
+    <div class="product-featured-price"><span class="product-price-new h6 text-sbold">1080.00INR</span><span class="product-price-old h7 text-light text-regular">$80.00</span></div>
+    <div class="product-featured-block-hover"><a href="shop-cart.html" class="btn btn-icon btn-icon-left btn-success"><span class="icon fl-outicons-shopping-cart13"></span>Add to cart</a></div>
+  </div>
+</div>
+
+            <div class="cell-sm-6 cell-lg-4">
+  <div class="product-featured text-center">
+
+    <div class="product-featured-images"><img src="/media/products/2109372338/2109372338.jpg" alt="" width="270" height="204" class="img-responsive"> </div>
+
+    <div class="product-featured-rating"><span class="icon material-icons-grade icon-saffron icon-xs-small"></span><span class="icon material-icons-grade icon-saffron icon-xs-small"></span><span class="icon material-icons-grade icon-saffron icon-xs-small"></span><span class="icon material-icons-grade icon-saffron icon-xs-small"></span><span class="icon material-icons-star_half icon-saffron icon-xs-small"></span></div>
+    <div class="product-featured-title">
+      <div class="h7 text-sbold"><a href="shop-single-products.html" class="text-chateau-green">Anguri Tin</a></div>
+    </div>
+    <div class="product-featured-price"><span class="product-price-new h6 text-sbold">200.00INR</span><span class="product-price-old h7 text-light text-regular">$80.00</span></div>
+    <div class="product-featured-block-hover"><a href="shop-cart.html" class="btn btn-icon btn-icon-left btn-success"><span class="icon fl-outicons-shopping-cart13"></span>Add to cart</a></div>
+  </div>
+</div>
+
+            <div class="cell-sm-6 cell-lg-4">
+  <div class="product-featured text-center">
+
+    <div class="product-featured-images"><img src="/media/products/327419445/327419445.jpg" alt="" width="270" height="204" class="img-responsive"> </div>
+
+    <div class="product-featured-rating"><span class="icon material-icons-grade icon-saffron icon-xs-small"></span><span class="icon material-icons-grade icon-saffron icon-xs-small"></span><span class="icon material-icons-grade icon-saffron icon-xs-small"></span><span class="icon material-icons-grade icon-saffron icon-xs-small"></span><span class="icon material-icons-star_half icon-saffron icon-xs-small"></span></div>
+    <div class="product-featured-title">
+      <div class="h7 text-sbold"><a href="shop-single-products.html" class="text-chateau-green">Anjir Dryfruit Cake</a></div>
+    </div>
+    <div class="product-featured-price"><span class="product-price-new h6 text-sbold">940.00INR</span><span class="product-price-old h7 text-light text-regular">$80.00</span></div>
+    <div class="product-featured-block-hover"><a href="shop-cart.html" class="btn btn-icon btn-icon-left btn-success"><span class="icon fl-outicons-shopping-cart13"></span>Add to cart</a></div>
+  </div>
+</div>
+
+            <div class="cell-sm-6 cell-lg-4">
+  <div class="product-featured text-center">
+
+    <div class="product-featured-images"><img src="/media/products/1457060931/1457060931.jpg" alt="" width="270" height="204" class="img-responsive"> </div>
+
+    <div class="product-featured-rating"><span class="icon material-icons-grade icon-saffron icon-xs-small"></span><span class="icon material-icons-grade icon-saffron icon-xs-small"></span><span class="icon material-icons-grade icon-saffron icon-xs-small"></span><span class="icon material-icons-grade icon-saffron icon-xs-small"></span><span class="icon material-icons-star_half icon-saffron icon-xs-small"></span></div>
+    <div class="product-featured-title">
+      <div class="h7 text-sbold"><a href="shop-single-products.html" class="text-chateau-green">Anjir Barfi</a></div>
+    </div>
+    <div class="product-featured-price"><span class="product-price-new h6 text-sbold">600.00INR</span><span class="product-price-old h7 text-light text-regular">$80.00</span></div>
+    <div class="product-featured-block-hover"><a href="shop-cart.html" class="btn btn-icon btn-icon-left btn-success"><span class="icon fl-outicons-shopping-cart13"></span>Add to cart</a></div>
+  </div>
+</div>
+
+            <div class="cell-sm-6 cell-lg-4">
+  <div class="product-featured text-center">
+
+    <div class="product-featured-images"><img src="/media/products/3169776649/3169776649.jpg" alt="" width="270" height="204" class="img-responsive"> </div>
+
+    <div class="product-featured-rating"><span class="icon material-icons-grade icon-saffron icon-xs-small"></span><span class="icon material-icons-grade icon-saffron icon-xs-small"></span><span class="icon material-icons-grade icon-saffron icon-xs-small"></span><span class="icon material-icons-grade icon-saffron icon-xs-small"></span><span class="icon material-icons-star_half icon-saffron icon-xs-small"></span></div>
+    <div class="product-featured-title">
+      <div class="h7 text-sbold"><a href="shop-single-products.html" class="text-chateau-green">Akhrot Qube</a></div>
+    </div>
+    <div class="product-featured-price"><span class="product-price-new h6 text-sbold">800.00INR</span><span class="product-price-old h7 text-light text-regular">$80.00</span></div>
+    <div class="product-featured-block-hover"><a href="shop-cart.html" class="btn btn-icon btn-icon-left btn-success"><span class="icon fl-outicons-shopping-cart13"></span>Add to cart</a></div>
+  </div>
+</div>
+
+            <div class="cell-sm-6 cell-lg-4">
+  <div class="product-featured text-center">
+
+    <div class="product-featured-images"><img src="/media/products/2373488431/2373488431.jpg" alt="" width="270" height="204" class="img-responsive"> </div>
+
+    <div class="product-featured-rating"><span class="icon material-icons-grade icon-saffron icon-xs-small"></span><span class="icon material-icons-grade icon-saffron icon-xs-small"></span><span class="icon material-icons-grade icon-saffron icon-xs-small"></span><span class="icon material-icons-grade icon-saffron icon-xs-small"></span><span class="icon material-icons-star_half icon-saffron icon-xs-small"></span></div>
+    <div class="product-featured-title">
+      <div class="h7 text-sbold"><a href="shop-single-products.html" class="text-chateau-green">Anjir Dryfruit Katri</a></div>
+    </div>
+    <div class="product-featured-price"><span class="product-price-new h6 text-sbold">850.00INR</span><span class="product-price-old h7 text-light text-regular">$80.00</span></div>
+    <div class="product-featured-block-hover"><a href="shop-cart.html" class="btn btn-icon btn-icon-left btn-success"><span class="icon fl-outicons-shopping-cart13"></span>Add to cart</a></div>
+  </div>
+</div>
+
+
+            <!--
+<footer class="page-foot">
+    <div class="shell">
+      <div class="range text-sm-left range-sm-top">
+        <div class="cell-lg-4 cell-sm-6 cell-sm-push-1"><a href="index.html"><img src="../static/img/logo.png" alt="" width="172" height="44" class="img-responsive"/></a>
+          <address class="contact-info offset-top-25">
+          <dl>
+            <dt class="text-bold reveal-block">Address:<br>
+            </dt>
+            <dd class="text-light">Station Road, <br>
+              Ahemdabad</dd>
+          </dl>
+          <dl class="offset-top-5">
+            <dt class="text-bold">Phone:</dt>
+            <dd><a href="callto:#" class="text-light">+91123456789</a></dd>
+          </dl>
+          <dl>
+            <dt class="text-bold">E-Mail:</dt>
+            <dd><a href="" class="text-light"><span class="__cf_email__" data-cfemail="325b5c545d7256575f5d5e5b5c591c5d4055">mohanjicaters@gmail.com</span></a></dd>
+          </dl>
+          </address>
+          <ul class="list-inline offset-top-25">
+            <li><a href="#" class="icon icon-gray-round icon-round icon-xs-small fa-facebook"></a></li>
+            <li><a href="#" class="icon icon-gray-round icon-round icon-xs-small fa-twitter"></a></li>
+            <li><a href="#" class="icon icon-gray-round icon-round icon-xs-small fa-google-plus"></a></li>
+            <li><a href="#" class="icon icon-gray-round icon-round icon-xs-small fa-linkedin"></a></li>
+          </ul>
+        </div>
+        <div class="cell-lg-4 cell-sm-6 cell-sm-push-2 cell-lg-push-4 offset-top-45 offset-sm-top-0"><span class="h7 text-uppercase text-spacing-60">latest from the blog</span>
+          <article class="post-widget"><a href="classic-single-blog.html">
+            <div class="unit unit-sm-horizontal unit-align-center unit-xs unit-xs-middle unit-spacing-sm unit-sm-align-left">
+              <div class="unit-left"><img src="../static/img/home-15-60x60.jpg" alt="" width="60" height="60" class="img-responsive img-circle"/> </div>
+              <div class="unit-body">
+                <div class="post-widget-meta"><span class="icon material-design-right244 icon-xxs icon-success"></span>
+                  <time datetime="2015" class="text-light">05/14/2015</time>
+                </div>
+                <div class="post-widget-title">
+                  <p>Organics Reduce Health Risks</p>
+                </div>
+              </div>
+            </div>
+            </a></article>
+          <article class="post-widget"><a href="classic-single-blog.html">
+            <div class="unit unit-sm-horizontal unit-align-center unit-xs unit-xs-middle unit-spacing-sm unit-sm-align-left">
+              <div class="unit-left"><img src="../static/img/home-16-60x60.jpg" alt="" width="60" height="60" class="img-responsive img-circle"/> </div>
+              <div class="unit-body">
+                <div class="post-widget-meta"><span class="icon material-design-right244 icon-xxs icon-success"></span>
+                  <time datetime="2015" class="text-light">05/14/2015</time>
+                </div>
+                <div class="post-widget-title">
+                  <p>GMOs: Your Right To Know</p>
+                </div>
+              </div>
+            </div>
+            </a></article>
+          <article class="post-widget"><a href="classic-single-blog.html">
+            <div class="unit unit-sm-horizontal unit-align-center unit-xs unit-xs-middle unit-spacing-sm unit-sm-align-left">
+              <div class="unit-left"><img src="../static/img/home-17-60x60.jpg" alt="" width="60" height="60" class="img-responsive img-circle"/> </div>
+              <div class="unit-body">
+                <div class="post-widget-meta"><span class="icon material-design-right244 icon-xxs icon-success"></span>
+                  <time datetime="2015" class="text-light">05/14/2015</time>
+                </div>
+                <div class="post-widget-title">
+                  <p>It's Your Personal Choice</p>
+                </div>
+              </div>
+            </div>
+            </a></article>
+        </div>
+        <div class="cell-lg-4 cell-sm-6 cell-sm-push-4 offset-top-45 offset-lg-top-0">
+          <h6 class="text-bold">Newsletter</h6>
+          <div class="text-subline"></div>
+          <div class="offset-top-30 text-left">
+            <p>Enter your email address to get the latest news, special events and student activities delivered right to your inbox.</p>
+          </div>
+          <div class="offset-top-10">
+            <form novalidate="novalidate" data-form-output="form-subscribe-footer" data-form-type="subscribe" method="post" action="#" class="rd-mailform form-subscribe">
+              <div class="form-group">
+                <div class="input-group input-group-sm">
+                  <input type="email" id="regula-generated-949383" placeholder="Your e-mail" name="email" data-constraints="@Required @Email" class="form-control form-control-has-validation">
+                  <span class="form-validation"></span> <span class="input-group-btn">
+                  <button type="submit" class="btn btn-sm btn-primary">Subscribe</button>
+                  </span> </div>
+              </div>
+              <div id="form-subscribe-footer" class="form-output"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <p class="text-center offset-top-25 copyright offset-sm-top-15">© <span id="copyright-year">2017 </span> All Rights Reserved. <a href="privacy.html">Privacy Policy</a> </p>
+    </div>
+  </footer>
+</div>
+<div id="form-output-global" class="snackbars"></div>
+<div tabindex="-1" role="dialog" aria-hidden="true" class="pswp">
+  <div class="pswp__bg"></div>
+  <div class="pswp__scroll-wrap">
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    <div class="pswp__ui pswp__ui&#45;&#45;hidden">
+      <div class="pswp__top-bar">
+        <div class="pswp__counter"></div>
+        <button title="Close (Esc)" class="pswp__button pswp__button&#45;&#45;close"></button>
+        <button title="Share" class="pswp__button pswp__button&#45;&#45;share"></button>
+        <button title="Toggle fullscreen" class="pswp__button pswp__button&#45;&#45;fs"></button>
+        <button title="Zoom in/out" class="pswp__button pswp__button&#45;&#45;zoom"></button>
+        <div class="pswp__preloader">
+          <div class="pswp__preloader__icn">
+            <div class="pswp__preloader__cut">
+              <div class="pswp__preloader__donut"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pswp__share-modal pswp__share-modal&#45;&#45;hidden pswp__single-tap">
+        <div class="pswp__share-tooltip"></div>
+      </div>
+      <button title="Previous (arrow left)" class="pswp__button pswp__button&#45;&#45;arrow&#45;&#45;left"></button>
+      <button title="Next (arrow right)" class="pswp__button pswp__button&#45;&#45;arrow&#45;&#45;right"></button>
+      <div class="pswp__caption">
+        <div class="pswp__caption__cent"></div>
+      </div>
+    </div>
+  </div>
+</div>
+-->
+<div class="footer">
+	<div class="container">
+        <div class="clearfix"></div>
+			<div class="footer-bottom">
+				<h2><a href="index.html">MohanJiCaters<span>The Best Caters</span></a></h2>
+				<p class="fo-para">Mohanjicaters have been creating misti magic since 1978. This business was started by Mohanji. He came to Ahemdabad from jodhpur took up a job in a catering in ahemdabad as a karigar (worker). With the passage of time the Mohanjicaters has become a throbbing venture of five generations.</p>
+				<ul class="social-fo">
+					<li><a href="#" class=" face"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+					<li><a href="#" class=" twi"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+					<li><a href="#" class=" pin"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li>
+					<li><a href="#" class=" dri"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
+				</ul>
+				<div class=" address">
+					<div class="col-md-4 fo-grid1">
+							<p><i class="fa fa-home" aria-hidden="true"></i>12K Street , 45 Building Road Ahmedabad.</p>
+					</div>
+					<div class="col-md-4 fo-grid1">
+							<p><i class="icon icon-primary icon-xs-middle fa-phone" aria-hidden="true"></i>+1234 789 123 , +1234 567 123</p>
+					</div>
+					<div class="col-md-4 fo-grid1">
+						<p><a href="mailto:mohanjicaters@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i>mohanjicaters@gmail.com</a></p>
+					</div>
+					<div class="clearfix"></div>
+
+					</div>
+			</div>
+		<div class="copy-right">
+			<p> © MohanJiCaters. All Rights Reserved | Design by  <a href="http://kexplorer.in"> LKY</a></p>
+		</div>
+	</div>
+</div>
+
+        <script src="../static/js/food/core.min.js"></script>
+        <script src="../static/js/food/script.js"></script>
+
+
+
+
+
+</main></div>

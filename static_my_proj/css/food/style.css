@@ -25970,7 +25970,7 @@ textarea.form-control {
 
 .section-115 {
     padding-top: 115px;
-    padding-bottom: 115px;
+    padding-bottom: 10px;
 }
 
 @media (min-width: 480px) {
@@ -26023,8 +26023,8 @@ textarea.form-control {
         padding-bottom: 95px;
     }
     .section-xs-115 {
-        padding-top: 115px;
-        padding-bottom: 115px;
+        /*padding-top: 115px;*/
+        /*padding-bottom: 115px;*/
     }
 }
 
@@ -50914,11 +50914,10 @@ margin-top:-400px;display:block;}
   	.page-head .range > .cell-lg-preffix-2{margin-left:0px;}
 	.page-head .range > .cell-md-push-2{order:0;}
 	.page-head  .rd-navbar-wrap .shell{max-width:none;}
-	.rd-navbar-static .rd-navbar-outer, .rd-navbar-fullwidth .rd-navbar-outer{padding-bottom: 20px;
-    padding-top: 20px;}
+	.rd-navbar-static .rd-navbar-outer, .rd-navbar-fullwidth .rd-navbar-outer{padding-bottom: 0px;
+    padding-top: 0px;}
 	.page-head   .cell-login{max-width:20%}
 .shell.rd-navbar-outer [class*="cell-"]{ padding-left: 25px;padding-right: 25px;}
 	
 
 }
-/*# sourceMappingURL=style.css.map */

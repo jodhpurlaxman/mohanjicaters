@@ -1,9 +1,0 @@
-<div>
-  <div data-items="1" data-sm-items="2" data-md-items="4" data-lg-items="4" data-stage-padding="15" data-dots-each="1" data-loop="true" data-dots="true" data-margin="30" class="owl-carousel owl-carousel-custom">
-      {% block content %}
-        {% for obj in object_list %}
-            {% include 'products/snippets/card.html' with instance=obj %}
-        {% endfor %}
-    {% endblock %}
-  </div>
-</div>
