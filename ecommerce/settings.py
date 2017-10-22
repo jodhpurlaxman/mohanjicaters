@@ -96,10 +96,11 @@ WSGI_APPLICATION = 'ecommerce.wsgi.application'
 
 DATABASES = {
     'default': {
-        'NAME': 'mohanjicatersv2',
+        'NAME': 'mohanjicaters$mohanjicatersv2',
         'ENGINE': 'django.db.backends.mysql',
-        'USER': 'root',
+        'USER': 'mohanjicaters',
         'PASSWORD': 'P@q2w3efg',
+        'HOST': 'mohanjicaters.mysql.pythonanywhere-services.com',
         'OPTIONS': {
           'autocommit': True,
         },
