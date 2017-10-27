@@ -1,6 +1,7 @@
+
 /*
 Theme Name: style.css
-Author: the philip team
+Author: lky
 Version: 1.0
 */
 @charset "UTF-8";
@@ -135,6 +136,39 @@ Version: 1.0
 /** 1 Bootstrap Framework */
 /** 1.1  Normalize */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+.checkboxFour {
+    width: 20px;
+    height: 20px;
+    background: #ddd;
+    margin: 20px 0px;
+    border-radius: 100%;
+    position: relative;
+    -webkit-box-shadow: 0px 1px 3px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 1px 3px rgba(0,0,0,0.5);
+    box-shadow: 0px 1px 3px rgba(0,0,0,0.5);
+ }
+
+.checkboxFour label {
+    display: block; !important
+    width: 20px;!important
+    height: 20px;!important
+    border-radius: 100px;!important
+    transition: all .5s ease;!important
+    cursor: pointer;!important
+    position: absolute;!important
+    /* top: 5px; */
+    /* left: 5px; */
+    z-index: 1; !important
+    background: #333; !important
+    -webkit-box-shadow: inset 0px 1px 3px rgba(0,0,0,0.5);!important
+}
+
+.checkboxFour input[type=checkbox]:checked + label {
+	background: #26ca28;!important
+}
+
+
+
 html {
     font-family: sans-serif;
     -ms-text-size-adjust: 100%;
@@ -22620,7 +22654,7 @@ textarea.form-control {
 .checkbox .checkbox-custom-dummy,
 .checkbox-inline .checkbox-custom-dummy {
     pointer-events: none;
-    background: #f3f4f9;
+    /*background: #f3f4f9;*/
     box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.15);
 }
 

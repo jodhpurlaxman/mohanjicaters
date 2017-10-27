@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.5.4.1deb2ubuntu2
+-- version 4.5.1
 -- http://www.phpmyadmin.net
 --
--- Host: localhost
--- Generation Time: Oct 22, 2017 at 11:27 PM
--- Server version: 5.7.19-0ubuntu0.16.04.1
--- PHP Version: 7.0.22-0ubuntu0.16.04.1
+-- Host: 127.0.0.1
+-- Generation Time: Oct 27, 2017 at 04:58 PM
+-- Server version: 10.1.19-MariaDB
+-- PHP Version: 5.6.28
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -19,7 +19,7 @@ SET time_zone = "+00:00";
 --
 -- Database: `mohanjicatersv2`
 --
-CREATE DATABASE IF NOT EXISTS `mohanjicatersv2` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
+CREATE DATABASE IF NOT EXISTS `mohanjicatersv2` DEFAULT CHARACTER SET utf8 COLLATE utf8_bin;
 USE `mohanjicatersv2`;
 
 -- --------------------------------------------------------
@@ -30,15 +30,15 @@ USE `mohanjicatersv2`;
 
 CREATE TABLE `addresses_address` (
   `id` int(11) NOT NULL,
-  `address_type` varchar(120) NOT NULL,
-  `address_line_1` varchar(120) NOT NULL,
-  `address_line_2` varchar(120) DEFAULT NULL,
-  `city` varchar(120) NOT NULL,
-  `country` varchar(120) NOT NULL,
-  `state` varchar(120) NOT NULL,
-  `postal_code` varchar(120) NOT NULL,
+  `address_type` varchar(120) COLLATE utf8_bin NOT NULL,
+  `address_line_1` varchar(120) COLLATE utf8_bin NOT NULL,
+  `address_line_2` varchar(120) COLLATE utf8_bin DEFAULT NULL,
+  `city` varchar(120) COLLATE utf8_bin NOT NULL,
+  `country` varchar(120) COLLATE utf8_bin NOT NULL,
+  `state` varchar(120) COLLATE utf8_bin NOT NULL,
+  `postal_code` varchar(120) COLLATE utf8_bin NOT NULL,
   `billing_profile_id` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
 -- --------------------------------------------------------
 
@@ -48,8 +48,8 @@ CREATE TABLE `addresses_address` (
 
 CREATE TABLE `auth_group` (
   `id` int(11) NOT NULL,
-  `name` varchar(80) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+  `name` varchar(80) COLLATE utf8_bin NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
 -- --------------------------------------------------------
 
@@ -61,7 +61,7 @@ CREATE TABLE `auth_group_permissions` (
   `id` int(11) NOT NULL,
   `group_id` int(11) NOT NULL,
   `permission_id` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
 -- --------------------------------------------------------
 
@@ -71,10 +71,10 @@ CREATE TABLE `auth_group_permissions` (
 
 CREATE TABLE `auth_permission` (
   `id` int(11) NOT NULL,
-  `name` varchar(255) NOT NULL,
+  `name` varchar(255) COLLATE utf8_bin NOT NULL,
   `content_type_id` int(11) NOT NULL,
-  `codename` varchar(100) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+  `codename` varchar(100) COLLATE utf8_bin NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
 --
 -- Dumping data for table `auth_permission`
@@ -87,54 +87,60 @@ INSERT INTO `auth_permission` (`id`, `name`, `content_type_id`, `codename`) VALU
 (4, 'Can add permission', 2, 'add_permission'),
 (5, 'Can change permission', 2, 'change_permission'),
 (6, 'Can delete permission', 2, 'delete_permission'),
-(7, 'Can add user', 3, 'add_user'),
-(8, 'Can change user', 3, 'change_user'),
-(9, 'Can delete user', 3, 'delete_user'),
-(10, 'Can add group', 4, 'add_group'),
-(11, 'Can change group', 4, 'change_group'),
-(12, 'Can delete group', 4, 'delete_group'),
+(7, 'Can add group', 3, 'add_group'),
+(8, 'Can change group', 3, 'change_group'),
+(9, 'Can delete group', 3, 'delete_group'),
+(10, 'Can add user', 4, 'add_user'),
+(11, 'Can change user', 4, 'change_user'),
+(12, 'Can delete user', 4, 'delete_user'),
 (13, 'Can add content type', 5, 'add_contenttype'),
 (14, 'Can change content type', 5, 'change_contenttype'),
 (15, 'Can delete content type', 5, 'delete_contenttype'),
-(16, 'Can add guest email', 6, 'add_guestemail'),
-(17, 'Can change guest email', 6, 'change_guestemail'),
-(18, 'Can delete guest email', 6, 'delete_guestemail'),
-(19, 'Can add address', 7, 'add_address'),
-(20, 'Can change address', 7, 'change_address'),
-(21, 'Can delete address', 7, 'delete_address'),
-(22, 'Can add billing profile', 8, 'add_billingprofile'),
-(23, 'Can change billing profile', 8, 'change_billingprofile'),
-(24, 'Can delete billing profile', 8, 'delete_billingprofile'),
-(25, 'Can add cart', 9, 'add_cart'),
-(26, 'Can change cart', 9, 'change_cart'),
-(27, 'Can delete cart', 9, 'delete_cart'),
-(28, 'Can add product', 10, 'add_product'),
-(29, 'Can change product', 10, 'change_product'),
-(30, 'Can delete product', 10, 'delete_product'),
-(31, 'Can add session', 11, 'add_session'),
-(32, 'Can change session', 11, 'change_session'),
-(33, 'Can delete session', 11, 'delete_session'),
-(34, 'Can add partial', 12, 'add_partial'),
-(35, 'Can change partial', 12, 'change_partial'),
-(36, 'Can delete partial', 12, 'delete_partial'),
-(37, 'Can add code', 13, 'add_code'),
-(38, 'Can change code', 13, 'change_code'),
-(39, 'Can delete code', 13, 'delete_code'),
-(40, 'Can add nonce', 14, 'add_nonce'),
-(41, 'Can change nonce', 14, 'change_nonce'),
-(42, 'Can delete nonce', 14, 'delete_nonce'),
-(43, 'Can add user social auth', 15, 'add_usersocialauth'),
-(44, 'Can change user social auth', 15, 'change_usersocialauth'),
-(45, 'Can delete user social auth', 15, 'delete_usersocialauth'),
-(46, 'Can add association', 16, 'add_association'),
-(47, 'Can change association', 16, 'change_association'),
-(48, 'Can delete association', 16, 'delete_association'),
-(49, 'Can add order', 17, 'add_order'),
-(50, 'Can change order', 17, 'change_order'),
-(51, 'Can delete order', 17, 'delete_order'),
-(52, 'Can add tag', 18, 'add_tag'),
-(53, 'Can change tag', 18, 'change_tag'),
-(54, 'Can delete tag', 18, 'delete_tag');
+(16, 'Can add session', 6, 'add_session'),
+(17, 'Can change session', 6, 'change_session'),
+(18, 'Can delete session', 6, 'delete_session'),
+(19, 'Can add user social auth', 7, 'add_usersocialauth'),
+(20, 'Can change user social auth', 7, 'change_usersocialauth'),
+(21, 'Can delete user social auth', 7, 'delete_usersocialauth'),
+(22, 'Can add association', 8, 'add_association'),
+(23, 'Can change association', 8, 'change_association'),
+(24, 'Can delete association', 8, 'delete_association'),
+(25, 'Can add code', 9, 'add_code'),
+(26, 'Can change code', 9, 'change_code'),
+(27, 'Can delete code', 9, 'delete_code'),
+(28, 'Can add nonce', 10, 'add_nonce'),
+(29, 'Can change nonce', 10, 'change_nonce'),
+(30, 'Can delete nonce', 10, 'delete_nonce'),
+(31, 'Can add partial', 11, 'add_partial'),
+(32, 'Can change partial', 11, 'change_partial'),
+(33, 'Can delete partial', 11, 'delete_partial'),
+(34, 'Can add guest email', 12, 'add_guestemail'),
+(35, 'Can change guest email', 12, 'change_guestemail'),
+(36, 'Can delete guest email', 12, 'delete_guestemail'),
+(37, 'Can add address', 13, 'add_address'),
+(38, 'Can change address', 13, 'change_address'),
+(39, 'Can delete address', 13, 'delete_address'),
+(40, 'Can add billing profile', 14, 'add_billingprofile'),
+(41, 'Can change billing profile', 14, 'change_billingprofile'),
+(42, 'Can delete billing profile', 14, 'delete_billingprofile'),
+(43, 'Can add cart', 15, 'add_cart'),
+(44, 'Can change cart', 15, 'change_cart'),
+(45, 'Can delete cart', 15, 'delete_cart'),
+(46, 'Can add order', 16, 'add_order'),
+(47, 'Can change order', 16, 'change_order'),
+(48, 'Can delete order', 16, 'delete_order'),
+(49, 'Can add product', 17, 'add_product'),
+(50, 'Can change product', 17, 'change_product'),
+(51, 'Can delete product', 17, 'delete_product'),
+(52, 'Can add category1', 18, 'add_category1'),
+(53, 'Can change category1', 18, 'change_category1'),
+(54, 'Can delete category1', 18, 'delete_category1'),
+(55, 'Can add tag', 19, 'add_tag'),
+(56, 'Can change tag', 19, 'change_tag'),
+(57, 'Can delete tag', 19, 'delete_tag'),
+(58, 'Can add brands', 20, 'add_brands'),
+(59, 'Can change brands', 20, 'change_brands'),
+(60, 'Can delete brands', 20, 'delete_brands');
 
 -- --------------------------------------------------------
 
@@ -144,24 +150,24 @@ INSERT INTO `auth_permission` (`id`, `name`, `content_type_id`, `codename`) VALU
 
 CREATE TABLE `auth_user` (
   `id` int(11) NOT NULL,
-  `password` varchar(128) NOT NULL,
+  `password` varchar(128) COLLATE utf8_bin NOT NULL,
   `last_login` datetime(6) DEFAULT NULL,
   `is_superuser` tinyint(1) NOT NULL,
-  `username` varchar(150) NOT NULL,
-  `first_name` varchar(30) NOT NULL,
-  `last_name` varchar(30) NOT NULL,
-  `email` varchar(254) NOT NULL,
+  `username` varchar(150) COLLATE utf8_bin NOT NULL,
+  `first_name` varchar(30) COLLATE utf8_bin NOT NULL,
+  `last_name` varchar(30) COLLATE utf8_bin NOT NULL,
+  `email` varchar(254) COLLATE utf8_bin NOT NULL,
   `is_staff` tinyint(1) NOT NULL,
   `is_active` tinyint(1) NOT NULL,
   `date_joined` datetime(6) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
 --
 -- Dumping data for table `auth_user`
 --
 
 INSERT INTO `auth_user` (`id`, `password`, `last_login`, `is_superuser`, `username`, `first_name`, `last_name`, `email`, `is_staff`, `is_active`, `date_joined`) VALUES
-(1, 'pbkdf2_sha256$36000$61y3W7wM4VBI$Bg49v//dzBVogZ7eRrkYQfXWLXCfJrtZtMKlUptoVs4=', '2017-10-22 16:36:08.280530', 1, 'lky', '', '', '', 1, 1, '2017-10-22 16:35:43.848732');
+(1, 'pbkdf2_sha256$36000$UTO8xq2Lzeg1$ri+b1uHqfJYcqDc+eoNZQZSIRKtG048Pwl1pYcc6Sg8=', '2017-10-27 11:15:14.378568', 1, 'it', '', '', '', 1, 1, '2017-10-24 09:59:54.917389');
 
 -- --------------------------------------------------------
 
@@ -173,7 +179,7 @@ CREATE TABLE `auth_user_groups` (
   `id` int(11) NOT NULL,
   `user_id` int(11) NOT NULL,
   `group_id` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
 -- --------------------------------------------------------
 
@@ -185,7 +191,7 @@ CREATE TABLE `auth_user_user_permissions` (
   `id` int(11) NOT NULL,
   `user_id` int(11) NOT NULL,
   `permission_id` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
 -- --------------------------------------------------------
 
@@ -195,12 +201,19 @@ CREATE TABLE `auth_user_user_permissions` (
 
 CREATE TABLE `billing_billingprofile` (
   `id` int(11) NOT NULL,
-  `email` varchar(254) NOT NULL,
+  `email` varchar(254) COLLATE utf8_bin NOT NULL,
   `active` tinyint(1) NOT NULL,
   `update` datetime(6) NOT NULL,
   `timestamp` datetime(6) NOT NULL,
   `user_id` int(11) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+
+--
+-- Dumping data for table `billing_billingprofile`
+--
+
+INSERT INTO `billing_billingprofile` (`id`, `email`, `active`, `update`, `timestamp`, `user_id`) VALUES
+(1, '', 1, '2017-10-24 10:03:13.691149', '2017-10-24 10:03:13.691208', 1);
 
 -- --------------------------------------------------------
 
@@ -215,7 +228,14 @@ CREATE TABLE `carts_cart` (
   `updated` datetime(6) NOT NULL,
   `timestamp` datetime(6) NOT NULL,
   `user_id` int(11) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+
+--
+-- Dumping data for table `carts_cart`
+--
+
+INSERT INTO `carts_cart` (`id`, `subtotal`, `total`, `updated`, `timestamp`, `user_id`) VALUES
+(1, '900.00', '972.00', '2017-10-24 10:03:07.850234', '2017-10-24 10:03:01.110780', 1);
 
 -- --------------------------------------------------------
 
@@ -227,7 +247,34 @@ CREATE TABLE `carts_cart_products` (
   `id` int(11) NOT NULL,
   `cart_id` int(11) NOT NULL,
   `product_id` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+
+--
+-- Dumping data for table `carts_cart_products`
+--
+
+INSERT INTO `carts_cart_products` (`id`, `cart_id`, `product_id`) VALUES
+(1, 1, 2);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `category_category1`
+--
+
+CREATE TABLE `category_category1` (
+  `id` int(11) NOT NULL,
+  `title` varchar(120) COLLATE utf8_bin NOT NULL,
+  `description` longtext COLLATE utf8_bin NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+
+--
+-- Dumping data for table `category_category1`
+--
+
+INSERT INTO `category_category1` (`id`, `title`, `description`) VALUES
+(1, 'Food', 'Food Products'),
+(2, 'Froots', 'Froots items');
 
 -- --------------------------------------------------------
 
@@ -238,31 +285,34 @@ CREATE TABLE `carts_cart_products` (
 CREATE TABLE `django_admin_log` (
   `id` int(11) NOT NULL,
   `action_time` datetime(6) NOT NULL,
-  `object_id` longtext,
-  `object_repr` varchar(200) NOT NULL,
+  `object_id` longtext COLLATE utf8_bin,
+  `object_repr` varchar(200) COLLATE utf8_bin NOT NULL,
   `action_flag` smallint(5) UNSIGNED NOT NULL,
-  `change_message` longtext NOT NULL,
+  `change_message` longtext COLLATE utf8_bin NOT NULL,
   `content_type_id` int(11) DEFAULT NULL,
   `user_id` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
 --
 -- Dumping data for table `django_admin_log`
 --
 
 INSERT INTO `django_admin_log` (`id`, `action_time`, `object_id`, `object_repr`, `action_flag`, `change_message`, `content_type_id`, `user_id`) VALUES
-(1, '2017-10-22 16:37:00.724499', '1', 'Anjir Barfi', 1, '[{"added": {}}]', 10, 1),
-(2, '2017-10-22 16:38:41.703571', '2', 'Akhrot Qube', 1, '[{"added": {}}]', 10, 1),
-(3, '2017-10-22 16:39:36.885324', '3', 'Anjir Dryfruit Cake', 1, '[{"added": {}}]', 10, 1),
-(4, '2017-10-22 16:41:21.331193', '4', 'Rasgulla Tin', 1, '[{"added": {}}]', 10, 1),
-(5, '2017-10-22 16:43:39.240981', '5', 'Rasgulla Tin', 1, '[{"added": {}}]', 10, 1),
-(6, '2017-10-22 17:18:38.604105', '5', 'Rasgulla Tin', 2, '[{"changed": {"fields": ["image"]}}]', 10, 1),
-(7, '2017-10-22 17:18:55.380202', '4', 'Rasgulla Tin', 2, '[{"changed": {"fields": ["image"]}}]', 10, 1),
-(8, '2017-10-22 17:19:05.801389', '3', 'Anjir Dryfruit Cake', 2, '[{"changed": {"fields": ["image"]}}]', 10, 1),
-(9, '2017-10-22 17:19:16.981682', '2', 'Akhrot Qube', 2, '[{"changed": {"fields": ["image"]}}]', 10, 1),
-(10, '2017-10-22 17:19:29.595885', '1', 'Anjir Barfi', 2, '[{"changed": {"fields": ["image"]}}]', 10, 1),
-(11, '2017-10-22 17:20:32.143867', '2', 'Akhrot Qube', 2, '[{"changed": {"fields": ["image"]}}]', 10, 1),
-(12, '2017-10-22 17:21:04.170942', '2', 'Akhrot Qube', 2, '[{"changed": {"fields": ["image"]}}]', 10, 1);
+(1, '2017-10-24 10:00:52.993972', '1', 'Food', 1, '[{"added": {}}]', 18, 1),
+(2, '2017-10-24 10:00:54.694431', '1', 'Food', 2, '[]', 18, 1),
+(3, '2017-10-24 10:01:35.772279', '2', 'Froots', 1, '[{"added": {}}]', 18, 1),
+(4, '2017-10-24 10:02:34.453597', '1', 'Kaju Katri', 1, '[{"added": {}}]', 17, 1),
+(5, '2017-10-24 10:02:57.015909', '2', 'Anjir Barfi', 1, '[{"added": {}}]', 17, 1),
+(6, '2017-10-24 10:03:30.407583', '2', 'Anjir Barfi', 2, '[]', 17, 1),
+(7, '2017-10-24 10:03:32.363820', '2', 'Anjir Barfi', 2, '[]', 17, 1),
+(8, '2017-10-24 10:03:48.440737', '3', 'Akhrot Qube', 1, '[{"added": {}}]', 17, 1),
+(9, '2017-10-24 10:04:14.318123', '4', 'Rasgulla Tin', 1, '[{"added": {}}]', 17, 1),
+(10, '2017-10-27 11:16:03.890201', '1', 'Brands object', 1, '[{"added": {}}]', 20, 1),
+(11, '2017-10-27 11:16:11.077680', '2', 'Brands object', 1, '[{"added": {}}]', 20, 1),
+(12, '2017-10-27 11:27:16.753881', '4', 'Rasgulla Tin', 2, '[{"changed": {"fields": ["brand"]}}]', 17, 1),
+(13, '2017-10-27 11:27:26.591603', '3', 'Akhrot Qube', 2, '[{"changed": {"fields": ["brand"]}}]', 17, 1),
+(14, '2017-10-27 11:27:36.815339', '2', 'Anjir Barfi', 2, '[{"changed": {"fields": ["brand"]}}]', 17, 1),
+(15, '2017-10-27 11:27:44.051596', '1', 'Kaju Katri', 2, '[{"changed": {"fields": ["brand"]}}]', 17, 1);
 
 -- --------------------------------------------------------
 
@@ -272,33 +322,35 @@ INSERT INTO `django_admin_log` (`id`, `action_time`, `object_id`, `object_repr`,
 
 CREATE TABLE `django_content_type` (
   `id` int(11) NOT NULL,
-  `app_label` varchar(100) NOT NULL,
-  `model` varchar(100) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+  `app_label` varchar(100) COLLATE utf8_bin NOT NULL,
+  `model` varchar(100) COLLATE utf8_bin NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
 --
 -- Dumping data for table `django_content_type`
 --
 
 INSERT INTO `django_content_type` (`id`, `app_label`, `model`) VALUES
-(6, 'accounts', 'guestemail'),
-(7, 'addresses', 'address'),
+(12, 'accounts', 'guestemail'),
+(13, 'addresses', 'address'),
 (1, 'admin', 'logentry'),
-(4, 'auth', 'group'),
+(3, 'auth', 'group'),
 (2, 'auth', 'permission'),
-(3, 'auth', 'user'),
-(8, 'billing', 'billingprofile'),
-(9, 'carts', 'cart'),
+(4, 'auth', 'user'),
+(14, 'billing', 'billingprofile'),
+(15, 'carts', 'cart'),
+(18, 'category', 'category1'),
 (5, 'contenttypes', 'contenttype'),
-(17, 'orders', 'order'),
-(10, 'products', 'product'),
-(11, 'sessions', 'session'),
-(16, 'social_django', 'association'),
-(13, 'social_django', 'code'),
-(14, 'social_django', 'nonce'),
-(12, 'social_django', 'partial'),
-(15, 'social_django', 'usersocialauth'),
-(18, 'tags', 'tag');
+(16, 'orders', 'order'),
+(20, 'products', 'brands'),
+(17, 'products', 'product'),
+(6, 'sessions', 'session'),
+(8, 'social_django', 'association'),
+(9, 'social_django', 'code'),
+(10, 'social_django', 'nonce'),
+(11, 'social_django', 'partial'),
+(7, 'social_django', 'usersocialauth'),
+(19, 'tags', 'tag');
 
 -- --------------------------------------------------------
 
@@ -308,50 +360,53 @@ INSERT INTO `django_content_type` (`id`, `app_label`, `model`) VALUES
 
 CREATE TABLE `django_migrations` (
   `id` int(11) NOT NULL,
-  `app` varchar(255) NOT NULL,
-  `name` varchar(255) NOT NULL,
+  `app` varchar(255) COLLATE utf8_bin NOT NULL,
+  `name` varchar(255) COLLATE utf8_bin NOT NULL,
   `applied` datetime(6) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
 --
 -- Dumping data for table `django_migrations`
 --
 
 INSERT INTO `django_migrations` (`id`, `app`, `name`, `applied`) VALUES
-(1, 'contenttypes', '0001_initial', '2017-10-22 07:18:52.457238'),
-(2, 'auth', '0001_initial', '2017-10-22 07:18:52.813688'),
-(3, 'admin', '0001_initial', '2017-10-22 07:18:52.897107'),
-(4, 'admin', '0002_logentry_remove_auto_add', '2017-10-22 07:18:52.917598'),
-(5, 'contenttypes', '0002_remove_content_type_name', '2017-10-22 07:18:52.991666'),
-(6, 'auth', '0002_alter_permission_name_max_length', '2017-10-22 07:18:53.022135'),
-(7, 'auth', '0003_alter_user_email_max_length', '2017-10-22 07:18:53.060264'),
-(8, 'auth', '0004_alter_user_username_opts', '2017-10-22 07:18:53.078526'),
-(9, 'auth', '0005_alter_user_last_login_null', '2017-10-22 07:18:53.112908'),
-(10, 'auth', '0006_require_contenttypes_0002', '2017-10-22 07:18:53.116050'),
-(11, 'auth', '0007_alter_validators_add_error_messages', '2017-10-22 07:18:53.131404'),
-(12, 'auth', '0008_alter_user_username_max_length', '2017-10-22 07:18:53.172900'),
-(13, 'billing', '0001_initial', '2017-10-22 07:18:53.233552'),
-(14, 'products', '0001_initial', '2017-10-22 07:18:53.266353'),
-(15, 'carts', '0001_initial', '2017-10-22 07:22:10.337488'),
-(16, 'addresses', '0001_initial', '2017-10-22 08:01:02.258278'),
-(17, 'orders', '0001_initial', '2017-10-22 08:01:25.638143'),
-(18, 'sessions', '0001_initial', '2017-10-22 08:01:25.671261'),
-(19, 'default', '0001_initial', '2017-10-22 08:01:25.850058'),
-(20, 'social_auth', '0001_initial', '2017-10-22 08:01:25.853199'),
-(21, 'default', '0002_add_related_name', '2017-10-22 08:01:25.909180'),
-(22, 'social_auth', '0002_add_related_name', '2017-10-22 08:01:25.912612'),
-(23, 'default', '0003_alter_email_max_length', '2017-10-22 08:01:25.945078'),
-(24, 'social_auth', '0003_alter_email_max_length', '2017-10-22 08:01:25.949339'),
-(25, 'default', '0004_auto_20160423_0400', '2017-10-22 08:01:25.967537'),
-(26, 'social_auth', '0004_auto_20160423_0400', '2017-10-22 08:01:25.970545'),
-(27, 'social_auth', '0005_auto_20160727_2333', '2017-10-22 08:01:25.989036'),
-(28, 'social_django', '0006_partial', '2017-10-22 08:01:26.021466'),
-(29, 'tags', '0001_initial', '2017-10-22 08:01:26.145340'),
-(30, 'social_django', '0001_initial', '2017-10-22 08:01:26.151121'),
-(31, 'social_django', '0003_alter_email_max_length', '2017-10-22 08:01:26.154101'),
-(32, 'social_django', '0005_auto_20160727_2333', '2017-10-22 08:01:26.157028'),
-(33, 'social_django', '0004_auto_20160423_0400', '2017-10-22 08:01:26.160331'),
-(34, 'social_django', '0002_add_related_name', '2017-10-22 08:01:26.164921');
+(1, 'contenttypes', '0001_initial', '2017-10-24 09:58:07.026447'),
+(2, 'auth', '0001_initial', '2017-10-24 09:58:21.474351'),
+(3, 'billing', '0001_initial', '2017-10-24 09:58:23.615134'),
+(4, 'addresses', '0001_initial', '2017-10-24 09:58:25.458491'),
+(5, 'admin', '0001_initial', '2017-10-24 09:58:28.541905'),
+(6, 'admin', '0002_logentry_remove_auto_add', '2017-10-24 09:58:28.601870'),
+(7, 'contenttypes', '0002_remove_content_type_name', '2017-10-24 09:58:30.484647'),
+(8, 'auth', '0002_alter_permission_name_max_length', '2017-10-24 09:58:31.945224'),
+(9, 'auth', '0003_alter_user_email_max_length', '2017-10-24 09:58:33.321492'),
+(10, 'auth', '0004_alter_user_username_opts', '2017-10-24 09:58:33.405934'),
+(11, 'auth', '0005_alter_user_last_login_null', '2017-10-24 09:58:34.139934'),
+(12, 'auth', '0006_require_contenttypes_0002', '2017-10-24 09:58:34.218559'),
+(13, 'auth', '0007_alter_validators_add_error_messages', '2017-10-24 09:58:34.332723'),
+(14, 'auth', '0008_alter_user_username_max_length', '2017-10-24 09:58:35.661526'),
+(15, 'category', '0001_initial', '2017-10-24 09:58:36.508220'),
+(16, 'products', '0001_initial', '2017-10-24 09:58:38.604075'),
+(17, 'carts', '0001_initial', '2017-10-24 09:58:43.807127'),
+(18, 'orders', '0001_initial', '2017-10-24 09:58:50.195115'),
+(19, 'sessions', '0001_initial', '2017-10-24 09:58:51.019596'),
+(20, 'default', '0001_initial', '2017-10-24 09:58:55.829277'),
+(21, 'social_auth', '0001_initial', '2017-10-24 09:58:55.883528'),
+(22, 'default', '0002_add_related_name', '2017-10-24 09:58:57.591603'),
+(23, 'social_auth', '0002_add_related_name', '2017-10-24 09:58:57.651016'),
+(24, 'default', '0003_alter_email_max_length', '2017-10-24 09:58:59.265834'),
+(25, 'social_auth', '0003_alter_email_max_length', '2017-10-24 09:58:59.331193'),
+(26, 'default', '0004_auto_20160423_0400', '2017-10-24 09:58:59.399285'),
+(27, 'social_auth', '0004_auto_20160423_0400', '2017-10-24 09:58:59.473238'),
+(28, 'social_auth', '0005_auto_20160727_2333', '2017-10-24 09:59:00.195797'),
+(29, 'social_django', '0006_partial', '2017-10-24 09:59:01.014239'),
+(30, 'tags', '0001_initial', '2017-10-24 09:59:05.766070'),
+(31, 'social_django', '0005_auto_20160727_2333', '2017-10-24 09:59:05.850486'),
+(32, 'social_django', '0001_initial', '2017-10-24 09:59:05.907365'),
+(33, 'social_django', '0004_auto_20160423_0400', '2017-10-24 09:59:05.970610'),
+(34, 'social_django', '0002_add_related_name', '2017-10-24 09:59:06.016188'),
+(35, 'social_django', '0003_alter_email_max_length', '2017-10-24 09:59:06.054187'),
+(36, 'products', '0002_auto_20171027_1103', '2017-10-27 11:03:40.558969'),
+(37, 'products', '0003_auto_20171027_1300', '2017-10-27 13:00:58.940409');
 
 -- --------------------------------------------------------
 
@@ -360,17 +415,18 @@ INSERT INTO `django_migrations` (`id`, `app`, `name`, `applied`) VALUES
 --
 
 CREATE TABLE `django_session` (
-  `session_key` varchar(40) NOT NULL,
-  `session_data` longtext NOT NULL,
+  `session_key` varchar(40) COLLATE utf8_bin NOT NULL,
+  `session_data` longtext COLLATE utf8_bin NOT NULL,
   `expire_date` datetime(6) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
 --
 -- Dumping data for table `django_session`
 --
 
 INSERT INTO `django_session` (`session_key`, `session_data`, `expire_date`) VALUES
-('jatffvn5rs6cvdxxdeugndtbg4ftefac', 'N2IyYTEzYTg0Zjk5YmE0Y2NlMGQ5Mjk4NDdjZDcxZmY5ZjRiZTBkYzp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9oYXNoIjoiMGRjZWI0YTg4OGE4ZmZmMjg4YjI2Yzc2MDNiNzRmNzE4MTUwOGI2MSIsIl9hdXRoX3VzZXJfaWQiOiIxIn0=', '2017-11-05 16:36:08.285507');
+('l54tp7idowemcvjqu3dz6g2nzbac3t6e', 'MGU0ZjkzZjhjNzBhZTExMDc4ZDdmODI1NWQyYzMzYzUyN2VlMmM4Mzp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiJiMzFkMDY2NzVlZjg0ZmQxMWJmYTQ3ZTgzNmIyNTY1MWIyNTQ1ZmZjIn0=', '2017-11-10 11:15:14.512712'),
+('uomb9ke5x630ts6gipj5v4d7u4uobc49', 'YTc5OTBlYTE3MzJjZDQzYmI0ZDNjYjI5MGEzZmIyMWJmYWM3NDY1Zjp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiY2FydF9pZCI6MSwiX2F1dGhfdXNlcl9oYXNoIjoiYjMxZDA2Njc1ZWY4NGZkMTFiZmE0N2U4MzZiMjU2NTFiMjU0NWZmYyIsImNhcnRfaXRlbXMiOjEsIl9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIn0=', '2017-11-07 10:03:07.990606');
 
 -- --------------------------------------------------------
 
@@ -380,8 +436,8 @@ INSERT INTO `django_session` (`session_key`, `session_data`, `expire_date`) VALU
 
 CREATE TABLE `orders_order` (
   `id` int(11) NOT NULL,
-  `order_id` varchar(120) NOT NULL,
-  `status` varchar(120) NOT NULL,
+  `order_id` varchar(120) COLLATE utf8_bin NOT NULL,
+  `status` varchar(120) COLLATE utf8_bin NOT NULL,
   `shipping_total` decimal(65,2) NOT NULL,
   `total` decimal(65,2) NOT NULL,
   `active` tinyint(1) NOT NULL,
@@ -389,7 +445,33 @@ CREATE TABLE `orders_order` (
   `billing_profile_id` int(11) DEFAULT NULL,
   `cart_id` int(11) NOT NULL,
   `shipping_address_id` int(11) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+
+--
+-- Dumping data for table `orders_order`
+--
+
+INSERT INTO `orders_order` (`id`, `order_id`, `status`, `shipping_total`, `total`, `active`, `billing_address_id`, `billing_profile_id`, `cart_id`, `shipping_address_id`) VALUES
+(1, '5flnliif2z', 'created', '5.99', '977.99', 1, NULL, 1, 1, NULL);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `products_brands`
+--
+
+CREATE TABLE `products_brands` (
+  `id` int(11) NOT NULL,
+  `title` varchar(120) COLLATE utf8_bin NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+
+--
+-- Dumping data for table `products_brands`
+--
+
+INSERT INTO `products_brands` (`id`, `title`) VALUES
+(1, 'Bikaji'),
+(2, 'HaldiRam');
 
 -- --------------------------------------------------------
 
@@ -399,26 +481,27 @@ CREATE TABLE `orders_order` (
 
 CREATE TABLE `products_product` (
   `id` int(11) NOT NULL,
-  `title` varchar(120) NOT NULL,
-  `slug` varchar(50) NOT NULL,
-  `description` longtext NOT NULL,
+  `title` varchar(120) COLLATE utf8_bin NOT NULL,
+  `slug` varchar(50) COLLATE utf8_bin NOT NULL,
+  `description` longtext COLLATE utf8_bin NOT NULL,
   `price` decimal(20,2) NOT NULL,
-  `image` varchar(100) DEFAULT NULL,
+  `image` varchar(100) COLLATE utf8_bin DEFAULT NULL,
   `featured` tinyint(1) NOT NULL,
   `active` tinyint(1) NOT NULL,
-  `timestamp` datetime(6) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+  `timestamp` datetime(6) NOT NULL,
+  `category_id` int(11) DEFAULT NULL,
+  `brands_id` int(11) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
 --
 -- Dumping data for table `products_product`
 --
 
-INSERT INTO `products_product` (`id`, `title`, `slug`, `description`, `price`, `image`, `featured`, `active`, `timestamp`) VALUES
-(1, 'Anjir Barfi', 'anjir-barfi', 'anjeer Barfi', '1082.00', 'products/2013112929/2013112929.png', 0, 1, '2017-10-22 16:37:00.723724'),
-(2, 'Akhrot Qube', 'akhrot-qube', 'Akhrot Qube', '900.00', 'products/2529416925/2529416925.png', 0, 1, '2017-10-22 16:38:41.702717'),
-(3, 'Anjir Dryfruit Cake', 'anjir-dryfruit-cake', 'Anjir Barfi', '1080.00', 'products/1751412959/1751412959.png', 0, 1, '2017-10-22 16:39:36.884585'),
-(4, 'Rasgulla Tin', 'rasgulla-tin', 'Rasgulla Tin', '200.00', 'products/1280043728/1280043728.png', 0, 1, '2017-10-22 16:41:21.329222'),
-(5, 'Rasgulla Tin', 'rasgulla-tin-1dz9', 'Rasgulla Tin', '600.00', 'products/1316956605/1316956605.png', 0, 1, '2017-10-22 16:43:39.240270');
+INSERT INTO `products_product` (`id`, `title`, `slug`, `description`, `price`, `image`, `featured`, `active`, `timestamp`, `category_id`, `brands_id`) VALUES
+(1, 'Kaju Katri', 'kaju-katri', 'Kaju Katri', '790.00', 'products/1536162061/1536162061.png', 0, 1, '2017-10-24 10:02:34.451694', 1, 2),
+(2, 'Anjir Barfi', 'anjir-barfi', 'Anjir Barfi', '900.00', 'products/3176658901/3176658901.png', 0, 1, '2017-10-24 10:02:57.014864', 1, 1),
+(3, 'Akhrot Qube', 'akhrot-qube', 'Akhrot Qube', '500.00', 'products/1168390229/1168390229.jpg', 0, 1, '2017-10-24 10:03:48.439726', 2, 2),
+(4, 'Rasgulla Tin', 'rasgulla-tin', 'Rasgulla Tin', '200.00', 'products/2150842864/2150842864.jpg', 0, 1, '2017-10-24 10:04:14.317128', 2, 1);
 
 -- --------------------------------------------------------
 
@@ -428,13 +511,13 @@ INSERT INTO `products_product` (`id`, `title`, `slug`, `description`, `price`, `
 
 CREATE TABLE `social_auth_association` (
   `id` int(11) NOT NULL,
-  `server_url` varchar(255) NOT NULL,
-  `handle` varchar(255) NOT NULL,
-  `secret` varchar(255) NOT NULL,
+  `server_url` varchar(255) COLLATE utf8_bin NOT NULL,
+  `handle` varchar(255) COLLATE utf8_bin NOT NULL,
+  `secret` varchar(255) COLLATE utf8_bin NOT NULL,
   `issued` int(11) NOT NULL,
   `lifetime` int(11) NOT NULL,
-  `assoc_type` varchar(64) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+  `assoc_type` varchar(64) COLLATE utf8_bin NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
 -- --------------------------------------------------------
 
@@ -444,10 +527,10 @@ CREATE TABLE `social_auth_association` (
 
 CREATE TABLE `social_auth_code` (
   `id` int(11) NOT NULL,
-  `email` varchar(254) NOT NULL,
-  `code` varchar(32) NOT NULL,
+  `email` varchar(254) COLLATE utf8_bin NOT NULL,
+  `code` varchar(32) COLLATE utf8_bin NOT NULL,
   `verified` tinyint(1) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
 -- --------------------------------------------------------
 
@@ -457,10 +540,10 @@ CREATE TABLE `social_auth_code` (
 
 CREATE TABLE `social_auth_nonce` (
   `id` int(11) NOT NULL,
-  `server_url` varchar(255) NOT NULL,
+  `server_url` varchar(255) COLLATE utf8_bin NOT NULL,
   `timestamp` int(11) NOT NULL,
-  `salt` varchar(65) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+  `salt` varchar(65) COLLATE utf8_bin NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
 -- --------------------------------------------------------
 
@@ -470,11 +553,11 @@ CREATE TABLE `social_auth_nonce` (
 
 CREATE TABLE `social_auth_partial` (
   `id` int(11) NOT NULL,
-  `token` varchar(32) NOT NULL,
+  `token` varchar(32) COLLATE utf8_bin NOT NULL,
   `next_step` smallint(5) UNSIGNED NOT NULL,
-  `backend` varchar(32) NOT NULL,
-  `data` longtext NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+  `backend` varchar(32) COLLATE utf8_bin NOT NULL,
+  `data` longtext COLLATE utf8_bin NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
 -- --------------------------------------------------------
 
@@ -484,11 +567,11 @@ CREATE TABLE `social_auth_partial` (
 
 CREATE TABLE `social_auth_usersocialauth` (
   `id` int(11) NOT NULL,
-  `provider` varchar(32) NOT NULL,
-  `uid` varchar(255) NOT NULL,
-  `extra_data` longtext NOT NULL,
+  `provider` varchar(32) COLLATE utf8_bin NOT NULL,
+  `uid` varchar(255) COLLATE utf8_bin NOT NULL,
+  `extra_data` longtext COLLATE utf8_bin NOT NULL,
   `user_id` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
 -- --------------------------------------------------------
 
@@ -498,11 +581,11 @@ CREATE TABLE `social_auth_usersocialauth` (
 
 CREATE TABLE `tags_tag` (
   `id` int(11) NOT NULL,
-  `title` varchar(120) NOT NULL,
-  `slug` varchar(50) NOT NULL,
+  `title` varchar(120) COLLATE utf8_bin NOT NULL,
+  `slug` varchar(50) COLLATE utf8_bin NOT NULL,
   `timestamp` datetime(6) NOT NULL,
   `active` tinyint(1) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
 -- --------------------------------------------------------
 
@@ -514,7 +597,7 @@ CREATE TABLE `tags_tag_products` (
   `id` int(11) NOT NULL,
   `tag_id` int(11) NOT NULL,
   `product_id` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
 --
 -- Indexes for dumped tables
@@ -595,6 +678,12 @@ ALTER TABLE `carts_cart_products`
   ADD KEY `carts_cart_products_product_id_17f38e1e_fk_products_product_id` (`product_id`);
 
 --
+-- Indexes for table `category_category1`
+--
+ALTER TABLE `category_category1`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `django_admin_log`
 --
 ALTER TABLE `django_admin_log`
@@ -633,11 +722,19 @@ ALTER TABLE `orders_order`
   ADD KEY `orders_order_shipping_address_id_c4f8227a_fk_addresses` (`shipping_address_id`);
 
 --
+-- Indexes for table `products_brands`
+--
+ALTER TABLE `products_brands`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `products_product`
 --
 ALTER TABLE `products_product`
   ADD PRIMARY KEY (`id`),
-  ADD UNIQUE KEY `slug` (`slug`);
+  ADD UNIQUE KEY `slug` (`slug`),
+  ADD KEY `products_product_category_id_9b594869_fk_category_category1_id` (`category_id`),
+  ADD KEY `products_product_brands_id_01925bd0_fk_products_brands_id` (`brands_id`);
 
 --
 -- Indexes for table `social_auth_association`
@@ -714,7 +811,7 @@ ALTER TABLE `auth_group_permissions`
 -- AUTO_INCREMENT for table `auth_permission`
 --
 ALTER TABLE `auth_permission`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=55;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=61;
 --
 -- AUTO_INCREMENT for table `auth_user`
 --
@@ -734,42 +831,52 @@ ALTER TABLE `auth_user_user_permissions`
 -- AUTO_INCREMENT for table `billing_billingprofile`
 --
 ALTER TABLE `billing_billingprofile`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 --
 -- AUTO_INCREMENT for table `carts_cart`
 --
 ALTER TABLE `carts_cart`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 --
 -- AUTO_INCREMENT for table `carts_cart_products`
 --
 ALTER TABLE `carts_cart_products`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+--
+-- AUTO_INCREMENT for table `category_category1`
+--
+ALTER TABLE `category_category1`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 --
 -- AUTO_INCREMENT for table `django_admin_log`
 --
 ALTER TABLE `django_admin_log`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 --
 -- AUTO_INCREMENT for table `django_content_type`
 --
 ALTER TABLE `django_content_type`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
 --
 -- AUTO_INCREMENT for table `django_migrations`
 --
 ALTER TABLE `django_migrations`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=35;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=38;
 --
 -- AUTO_INCREMENT for table `orders_order`
 --
 ALTER TABLE `orders_order`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+--
+-- AUTO_INCREMENT for table `products_brands`
+--
+ALTER TABLE `products_brands`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 --
 -- AUTO_INCREMENT for table `products_product`
 --
 ALTER TABLE `products_product`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 --
 -- AUTO_INCREMENT for table `social_auth_association`
 --
@@ -876,6 +983,13 @@ ALTER TABLE `orders_order`
   ADD CONSTRAINT `orders_order_billing_profile_id_0e11b610_fk_billing_b` FOREIGN KEY (`billing_profile_id`) REFERENCES `billing_billingprofile` (`id`),
   ADD CONSTRAINT `orders_order_cart_id_7e0252e3_fk_carts_cart_id` FOREIGN KEY (`cart_id`) REFERENCES `carts_cart` (`id`),
   ADD CONSTRAINT `orders_order_shipping_address_id_c4f8227a_fk_addresses` FOREIGN KEY (`shipping_address_id`) REFERENCES `addresses_address` (`id`);
+
+--
+-- Constraints for table `products_product`
+--
+ALTER TABLE `products_product`
+  ADD CONSTRAINT `products_product_brands_id_01925bd0_fk_products_brands_id` FOREIGN KEY (`brands_id`) REFERENCES `products_brands` (`id`),
+  ADD CONSTRAINT `products_product_category_id_9b594869_fk_category_category1_id` FOREIGN KEY (`category_id`) REFERENCES `category_category1` (`id`);
 
 --
 -- Constraints for table `social_auth_usersocialauth`

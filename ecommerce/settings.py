@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     #our apps
+
     'social_django',
     'accounts',
     'addresses',
@@ -46,8 +47,12 @@ INSTALLED_APPS = [
     'carts',
     'orders',
     'products',
+    'category',
+    'django_filters',
+    'widget_tweaks',
     'search',
     'tags',
+
 ]
 
 MIDDLEWARE = [
@@ -96,11 +101,11 @@ WSGI_APPLICATION = 'ecommerce.wsgi.application'
 
 DATABASES = {
     'default': {
-        'NAME': 'mohanjicaters$mohanjicatersv2',
+        'NAME': 'mohanjicatersv2',
         'ENGINE': 'django.db.backends.mysql',
-        'USER': 'mohanjicaters',
+        'USER': 'qualdev',
         'PASSWORD': 'P@q2w3efg',
-        'HOST': 'mohanjicaters.mysql.pythonanywhere-services.com',
+        'HOST': '192.168.0.98',
         'OPTIONS': {
           'autocommit': True,
         },
@@ -140,6 +145,7 @@ USE_L10N = True
 
 USE_TZ = True
 
+#APPEND_SLASH = False
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.11/howto/static-files/

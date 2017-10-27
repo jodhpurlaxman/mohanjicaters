@@ -1,128 +1,66 @@
-# from django.views import ListView
-from django.http import Http404
-from django.views.generic import ListView, DetailView
-from django.shortcuts import render, get_object_or_404
-
-from carts.models import Cart
-
+from django.views.generic import TemplateView, ListView, FormView
+from django.shortcuts import render
+from .filters import UserFilter
 from .models import Product
+from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 
 
-class ProductFeaturedListView(ListView):
-    template_name = "products/productlist.html"
+# class ProductListView(ListView):
+#     template_name = "products/product_list.html"
+# #
+#
+#     def get_context_data(self, *args, **kwargs):
+#         context = super(ProductListView, self).get_context_data(*args, **kwargs)
+#         print(context)
+#         return context
+# # #
+# #     def get_queryset(self, *args, **kwargs):
+# #         request = self.request.GET
+# #         return Product.objects.all()
 
-    def get_queryset(self, *args, **kwargs):
-        request = self.request
-        return Product.objects.all().featured()
-
-
-class ProductFeaturedDetailView(DetailView):
-    queryset = Product.objects.all().featured()
-    template_name = "products/featured-detail.html"
-
-    # def get_queryset(self, *args, **kwargs):
-    #     request = self.request
-    #     return Product.objects.featured()
-
-
-
-class ProductListView(ListView):
-    template_name = "products/productlist.html"
-
-    # def get_context_data(self, *args, **kwargs):
-    #     context = super(ProductListView, self).get_context_data(*args, **kwargs)
-    #     print(context)
-    #     return context
-
-    def get_queryset(self, *args, **kwargs):
-        request = self.request
-        return Product.objects.all()
-
+# def product_list_view(request):
+#     product_list = Product.objects.all()
+#     page = request.GET.get('page')
+#     paginator = Paginator(product_list, 10)
+#     try:
+#         object_list = paginator.page(page)
+#     except PageNotAnInteger:
+#         # If page is not an integer, deliver first page.
+#         object_list = paginator.page(1)
+#     except EmptyPage:
+#         # If page is out of range (e.g. 9999), deliver last page of results.
+#         object_list = paginator.page(paginator.num_pages)
+#     # user_filter = UserFilter(request.POST, queryset=product_list)
+#     return render(request, 'products/product_list.html', {'object_list': object_list})#, 'user_filter': user_filter})
 
 def product_list_view(request):
-    queryset = Product.objects.all()
-    context = {
-        'object_list': queryset
-    }
-    return render(request, "products/productlist.html", context)
+    product_list = Product.objects.all()
+    user_filter = UserFilter(request.GET, queryset=product_list)
+    return render(request, 'products/product_list.html', {'filter': user_filter})
 
 
 
-class ProductDetailSlugView(DetailView):
-    queryset = Product.objects.all()
-    template_name = "products/detail.html"
-
-    def get_context_data(self, *args, **kwargs):
-        context = super(ProductDetailSlugView, self).get_context_data(*args, **kwargs)
-        cart_obj, new_obj = Cart.objects.new_or_get(self.request)
-        context['cart'] = cart_obj
-        return context
-
-    def get_object(self, *args, **kwargs):
-        request = self.request
-        slug = self.kwargs.get('slug')
-        #instance = get_object_or_404(Product, slug=slug, active=True)
-        try:
-            instance = Product.objects.get(slug=slug, active=True)
-        except Product.DoesNotExist:
-            raise Http404("Not found..")
-        except Product.MultipleObjectsReturned:
-            qs = Product.objects.filter(slug=slug, active=True)
-            instance = qs.first()
-        except:
-            raise Http404("Uhhmmm ")
-        return instance
 
 
 
-class ProductDetailView(DetailView):
-    #queryset = Product.objects.all()
-    template_name = "products/detail.html"
+# class GenerateReport(ListView):
+#     template_name = 'products/product_list.html'
+#
+#     def get_queryset(self, *args, **kwargs):
+#         request = self.request
+#         return Product.objects.all()
+#
+# def product_list_view(request):
+#     product_list = Product.objects.all()
+#     page = request.GET.get('page')
+#     paginator = Paginator(product_list, 10)
+#     try:
+#         object_list = paginator.page(page)
+#     except PageNotAnInteger:
+#         # If page is not an integer, deliver first page.
+#         object_list = paginator.page(1)
+#     except EmptyPage:
+#         # If page is out of range (e.g. 9999), deliver last page of results.
+#         object_list = paginator.page(paginator.num_pages)
+#     return render(request, 'products/product_list.html', {'object_list': object_list})
 
-    def get_context_data(self, *args, **kwargs):
-        context = super(ProductDetailView, self).get_context_data(*args, **kwargs)
-        print(context)
-        # context['abc'] = 123
-        return context
-
-    def get_object(self, *args, **kwargs):
-        request = self.request
-        pk = self.kwargs.get('pk')
-        instance = Product.objects.get_by_id(pk)
-        if instance is None:
-            raise Http404("Product doesn't exist")
-        return instance
-
-    # def get_queryset(self, *args, **kwargs):
-    #     request = self.request
-    #     pk = self.kwargs.get('pk')
-    #     return Product.objects.filter(pk=pk)
-
-
-def product_detail_view(request, pk=None, *args, **kwargs):
-    # instance = Product.objects.get(pk=pk, featured=True) #id
-    # instance = get_object_or_404(Product, pk=pk, featured=True)
-    # try:
-    #     instance = Product.objects.get(id=pk)
-    # except Product.DoesNotExist:
-    #     print('no product here')
-    #     raise Http404("Product doesn't exist")
-    # except:
-    #     print("huh?")
-
-    instance = Product.objects.get_by_id(pk)
-    if instance is None:
-        raise Http404("Product doesn't exist")
-    #print(instance)
-    # qs  = Product.objects.filter(id=pk)
-
-    # #print(qs)
-    # if qs.exists() and qs.count() == 1: # len(qs)
-    #     instance = qs.first()
-    # else:
-    #     raise Http404("Product doesn't exist")
-
-    context = {
-        'object': instance
-    }
-    return render(request, "products/detail.html", context)

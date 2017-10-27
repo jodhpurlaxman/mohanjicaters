@@ -15,23 +15,6 @@ from social_django.models import UserSocialAuth
 
 
 
-class ProductFeaturedListView(ListView):
-    template_name = "home_page1.html"
-
-    def get_queryset(self, *args, **kwargs):
-        request = self.request
-        return Product.objects.all().featured()
-
-
-class ProductFeaturedDetailView(DetailView):
-    queryset = Product.objects.all().featured()
-    template_name = "products/featured-detail.html"
-
-    # def get_queryset(self, *args, **kwargs):
-    #     request = self.request
-    #     return Product.objects.featured()
-
-
 
 class ProductListView(ListView):
     template_name = "home_page1.html"
